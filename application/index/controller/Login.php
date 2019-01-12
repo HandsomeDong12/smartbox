@@ -51,7 +51,7 @@ class Login
         } else {
             $tokenModel = new Token();
             $token = $tokenModel->getToken();
-            $key = "fffuckfuck";
+            $key = "fuckfuck";
             $jwt = JWT::encode($token, $key);
             $code = 200;
             $message = 'successful';
