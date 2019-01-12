@@ -12,7 +12,7 @@
 use think\Route;
 
 Route::get('/', 'index/Index/index');
-Route::get('/login', 'index/Index/login');
+Route::get('/login', 'index/Login/login');
 Route::get('/test', 'index/Index/test');
 
 
