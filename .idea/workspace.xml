@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="003b7c84-8d6f-44f5-b375-3467079d40a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/vendor/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="003b7c84-8d6f-44f5-b375-3467079d40a0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/database.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
@@ -41,11 +39,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="30">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -150,7 +148,7 @@
       <updated>1547308064334</updated>
       <workItem from="1547308073968" duration="8399000" />
       <workItem from="1547359654707" duration="128000" />
-      <workItem from="1547359788283" duration="1950000" />
+      <workItem from="1547359788283" duration="2202000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore config">
       <created>1547308497875</created>
@@ -201,11 +199,39 @@
       <option name="project" value="LOCAL" />
       <updated>1547361261435</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="gitignore config">
+      <created>1547361745088</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1547361745088</updated>
+    </task>
+    <task id="LOCAL-00009" summary="gitignore config">
+      <created>1547361859816</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1547361859816</updated>
+    </task>
+    <task id="LOCAL-00010" summary="gitignore config">
+      <created>1547361959232</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1547361959232</updated>
+    </task>
+    <task id="LOCAL-00011" summary="gitignore config">
+      <created>1547361973862</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1547361973862</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10477000" />
+    <option name="totallyTimeSpent" value="10729000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,6 +363,13 @@
     <entry file="file://$PROJECT_DIR$/application/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -344,13 +377,6 @@
           <folding>
             <element signature="e#6#80#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
