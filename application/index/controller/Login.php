@@ -9,7 +9,6 @@
 namespace app\index\controller;
 
 use app\index\service\Database;
-use Firebase\JWT\JWT;
 use app\index\tools\Token;
 use think\Request;
 
@@ -21,22 +20,21 @@ class Login
     public function login()
     {
         $database = new Database();
+        $token = null;
 
         $request = Request::instance();
         $param = $request->param();
         $data = $database->login($param);
 
-        $token = null;
 
         if (count($data) == 0) {
             $code = 400;
             $message = 'failed';
         } else {
-
             $token = Token::getToken($request->param('usernum'));
             $code = 200;
             $message = 'successful';
         }
-        return json(['data' => $data, $request->param('usernum'), 'code' => $code, 'message' => $message]);
+        return json(['data' => $data, 'token' => $token, 'code' => $code, 'message' => $message]);
     }
 }
