@@ -31,12 +31,8 @@ class Database
         //$data = Db::query("select username, usernum from test where usernum = '$param[usernum]' and passwd = '$param[passwd]'");
 
         $data = Db::table('test')
-            ->where('usernum', $param['usernum'])
-            ->where('passwd', $param['passwd'])
-            ->find()
+            ->where("usernum = $param[usernum] AND passwd = $param[passwd]")
             ->field('username, usernum')->select();
-
-        echo $data;
 
         return $data;
     }
