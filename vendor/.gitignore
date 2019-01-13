@@ -2,4 +2,5 @@
 !.gitignore
 /.idea/
 /thinkphp/
+
 /application/database.php
