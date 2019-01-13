@@ -36,6 +36,8 @@ class Database
             ->find()
             ->field('username, usernum')->select();
 
+        echo $data;
+
         return $data;
     }
 
