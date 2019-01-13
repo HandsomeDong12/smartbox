@@ -10,6 +10,7 @@ namespace app\index\controller;
 
 use app\index\service\Database;
 use app\index\tools\Token;
+use Firebase\JWT\JWT;
 use think\Request;
 
 class Login
@@ -35,6 +36,7 @@ class Login
             $message = 'failed';
         } else {
             $token = Token::getToken($request->param('usernum'));
+            $token = JWT::decode($token, 'YUHAIDONG');
             $code = 200;
             $message = 'successful';
         }
