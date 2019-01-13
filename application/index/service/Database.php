@@ -34,7 +34,7 @@ class Database
             ->where('usernum', $param['usernum'])
             ->where('passwd', $param['passwd'])
             ->find()
-            ->field(['username, usernum'])->select();
+            ->field('username, usernum')->select();
 
         return $data;
     }
