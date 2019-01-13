@@ -8,7 +8,7 @@
 
 namespace app\index\controller;
 
-use app\index\model\LoginJson;
+use app\index\model\LoginResult;
 use app\index\service\Database;
 use app\index\tools\Token;
 use think\Request;
@@ -17,7 +17,6 @@ class Login
 {
 
     /**
-     * @return \think\response\Json
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
      * @throws \think\exception\DbException
@@ -25,7 +24,7 @@ class Login
     public function login()
     {
         $database = new Database();
-        $loginJson = new LoginJson();
+        $loginJson = new LoginResult();
         $token = null;
 
         $request = Request::instance();
@@ -33,10 +32,10 @@ class Login
         $data = $database->login($param);
 
         if (count($data) == 0) {
-            $result = $loginJson->getFailedJson();
+            $result = $loginJson->getFailedResult();
         } else {
             $token = Token::getToken($request->param('usernum'));
-            $result = $loginJson->getSuccessfulJson($token, $data);
+            $result = $loginJson->getSuccessfulResult($token, $data);
         }
         return $result;
     }

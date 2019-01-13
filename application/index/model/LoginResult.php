@@ -9,7 +9,7 @@
 namespace app\index\model;
 
 
-class LoginJson
+class LoginResult
 {
     private $successfulStatus;
 
@@ -27,31 +27,25 @@ class LoginJson
         $this->failedMessage = 'Error account or password, please try again!';
     }
 
-    /**
-     * @param $token
-     * @param $userData
-     * @return false|string
-     */
-    public function getSuccessfulJson($token, $userData)
+
+    public function getSuccessfulResult($token, $userData)
     {
-        $loginInfo = array(
+        $loginResult = array(
             'status' => $this->successfulStatus,
             'token' =>$token,
             'userData' => $userData,
             'message' => $this->successfulMessage
         );
-        $loginJson = json_encode($loginInfo);
-        return $loginJson;
+        return $loginResult;
     }
 
-    public function getFailedJson()
+    public function getFailedResult()
     {
-        $loginInfo = array(
+        $loginResult = array(
             'status' => $this->failedStatus,
             'message' => $this->failedMessage
         );
-        $loginJson = json_encode($loginInfo);
-        return $loginJson;
+        return $loginResult;
     }
 
 
