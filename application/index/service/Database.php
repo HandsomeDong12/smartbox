@@ -34,8 +34,8 @@ class Database
         $passWd = $param['passwd'];
 
         $data = Db::table('test')
-            ->where("usernum = $userNum")
-            ->where("passwd = $passWd")
+            ->where('usernum', $userNum)
+            ->where('passwd', $passWd)
             ->field('username, usernum')->select();
 
         return $data;
