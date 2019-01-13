@@ -15,6 +15,12 @@ use think\Request;
 class Login
 {
 
+    /**
+     * @return \think\response\Json
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
     public function login()
     {
         $database = new Database();
