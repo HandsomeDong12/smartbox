@@ -14,9 +14,7 @@ use think\Request;
 
 class Login
 {
-    /**
-     * @return \think\response\Json
-     */
+
     public function login()
     {
         $database = new Database();
