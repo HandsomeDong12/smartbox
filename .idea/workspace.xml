@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="003b7c84-8d6f-44f5-b375-3467079d40a0" name="Default Changelist" comment="gitignore config">
+    <list default="true" id="003b7c84-8d6f-44f5-b375-3467079d40a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/vendor/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="45">
+              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -150,7 +150,7 @@
       <updated>1547308064334</updated>
       <workItem from="1547308073968" duration="8399000" />
       <workItem from="1547359654707" duration="128000" />
-      <workItem from="1547359788283" duration="1057000" />
+      <workItem from="1547359788283" duration="1466000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore config">
       <created>1547308497875</created>
@@ -187,11 +187,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547360391571</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gitignore config">
+      <created>1547360862275</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1547360862275</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9584000" />
+    <option name="totallyTimeSpent" value="9993000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,8 +342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="45">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
