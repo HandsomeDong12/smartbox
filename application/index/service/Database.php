@@ -15,20 +15,26 @@ class Database
 
     public function test1()
     {
-        $test = Db::query("select usernum, username from test where usernum = 18814215401 and passwd = '123yhd.'");
-        return $test;
-    }
-
-    public function test2()
-    {
-        $test = Db::table('test')->where('usernum', 18814215401)->find();
-        return $test;
+        Db::table('test');
     }
 
 
+    /**
+     * @param $param
+     * @return false|\PDOStatement|string|\think\Collection
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
     public function login($param)
     {
-        $data = Db::query("select username, usernum from test where usernum = '$param[usernum]' and passwd = '$param[passwd]'");
+        //$data = Db::query("select username, usernum from test where usernum = '$param[usernum]' and passwd = '$param[passwd]'");
+
+        $data = Db::table('test')
+            ->where('usernum', $param['usernum'])
+            ->where('passwd', $param['passwd'])
+            ->find()
+            ->field(['username, usernum'])->select();
 
         return $data;
     }
