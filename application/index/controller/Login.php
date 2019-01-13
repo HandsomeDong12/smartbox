@@ -36,7 +36,7 @@ class Login
             $message = 'failed';
         } else {
             $token = Token::getToken($request->param('usernum'));
-            $token = JWT::decode($token, 'YUHAIDONG');
+            $token = JWT::decode($token, 'YUHAIDONG', 'HS256');
             $code = 200;
             $message = 'successful';
         }
