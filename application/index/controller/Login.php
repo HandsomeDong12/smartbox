@@ -8,6 +8,7 @@
 
 namespace app\index\controller;
 
+use app\index\model\LoginJson;
 use app\index\service\Database;
 use app\index\tools\Token;
 use think\Request;
@@ -24,6 +25,7 @@ class Login
     public function login()
     {
         $database = new Database();
+        $loginJson = new LoginJson();
         $token = null;
 
         $request = Request::instance();
@@ -31,13 +33,11 @@ class Login
         $data = $database->login($param);
 
         if (count($data) == 0) {
-            $status = 0;
-            $message = 'Error account or password, please try again!';
+            $result = $loginJson->getFailedJson();
         } else {
             $token = Token::getToken($request->param('usernum'));
-            $status = 1;
-            $message = 'Successfully login!';
+            $result = $loginJson->getSuccessfulJson($token, $data);
         }
-        return json(['data' => $data, 'token' => $token, 'code' => $status, 'message' => $message]);
+        return $result;
     }
 }
