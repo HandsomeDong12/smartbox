@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003b7c84-8d6f-44f5-b375-3467079d40a0" name="Default Changelist" comment="gitignore config">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/database.example" beforeDir="false" afterPath="$PROJECT_DIR$/application/database.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/index/service/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/service/Database.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +22,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/index/controller/Login.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
+                <state relative-caret-position="299">
                   <caret line="27" selection-start-line="27" selection-end-line="27" />
                   <folding>
                     <element signature="e#120#151#0#PHP" expanded="true" />
@@ -60,8 +58,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/index/service/Database.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+                <state relative-caret-position="375">
+                  <caret line="33" column="76" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
                 </state>
               </provider>
             </entry>
@@ -237,7 +235,7 @@
       <updated>1547308064334</updated>
       <workItem from="1547308073968" duration="8399000" />
       <workItem from="1547359654707" duration="128000" />
-      <workItem from="1547359788283" duration="6866000" />
+      <workItem from="1547359788283" duration="7269000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore config">
       <created>1547308497875</created>
@@ -344,11 +342,32 @@
       <option name="project" value="LOCAL" />
       <updated>1547365443138</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="gitignore config">
+      <created>1547367212970</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1547367212970</updated>
+    </task>
+    <task id="LOCAL-00017" summary="gitignore config">
+      <created>1547367278727</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1547367278727</updated>
+    </task>
+    <task id="LOCAL-00018" summary="gitignore config">
+      <created>1547367368929</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1547367368929</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15393000" />
+    <option name="totallyTimeSpent" value="15796000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -503,7 +522,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="299">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#120#151#0#PHP" expanded="true" />
@@ -520,8 +539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/service/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="375">
+          <caret line="33" column="76" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
         </state>
       </provider>
     </entry>
