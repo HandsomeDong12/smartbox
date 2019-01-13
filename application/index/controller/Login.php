@@ -30,7 +30,7 @@ class Login
         $param = $request->param();
         $data = $database->login($param);
 
-        if (count($data) == 0) {
+        if (is_null($data)) {
             $code = 400;
             $message = 'failed';
         } else {
