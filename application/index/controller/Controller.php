@@ -22,8 +22,7 @@ class Controller
 
     protected function getUser($token)
     {
-        $user = $this->userParser->getUser($token);
-        return $user;
+        return $this->userParser->getUser($token);
     }
 
 

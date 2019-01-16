@@ -11,14 +11,6 @@ use think\Request;
 
 class Index extends Controller
 {
-    private $userParser;
-
-    public function __construct(UserParser $userParser)
-    {
-        $this->userParser = $userParser;
-    }
-
-
     public function index()
     {
         $testDatabase = new Database();
@@ -44,7 +36,7 @@ class Index extends Controller
         } else {
             $token = Token::getToken($request->param('usernum'));
 
-            return $this->userParser->getUser($token);
+            return $this->getUser($token);
         }
 
     }
