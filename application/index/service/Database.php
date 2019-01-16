@@ -53,7 +53,7 @@ class Database
     {
         $userData = Db::table('test')
             ->where('usernum', $user)
-            ->find();
+            ->select();
         return $userData;
     }
 
