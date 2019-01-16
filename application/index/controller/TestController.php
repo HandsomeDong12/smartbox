@@ -36,7 +36,7 @@ class TestController extends Controller
         } else {
             $token = Token::getToken($request->param('usernum'));
 
-            return $this->getUser($token);
+            return $token;
         }
 
     }
