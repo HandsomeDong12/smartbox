@@ -53,8 +53,25 @@ class Database
     {
         $userData = Db::table('test')
             ->where('usernum', $user)
-            ->select();
+            ->find();
         return $userData;
+    }
+
+    /**
+     * @param $user
+     * @return false|string|\think\Collection
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
+    public function getMedicineStatus($user)
+    {
+        $status = Db::table('medicineStatus')
+            ->where('usernum', $user)
+            ->field('status')
+            ->find();
+
+        return $status;
     }
 
 }

@@ -22,7 +22,7 @@ class LoginController extends Controller
      * @return array
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
-     * @throws \think\exception\DbException
+     * @throws \think\exception
      */
     public function login(Request $request)
     {

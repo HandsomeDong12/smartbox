@@ -10,14 +10,23 @@ namespace app\index\controller;
 
 
 use app\index\service\UserParser;
+use think\Request;
 
 class Controller
 {
 
-    protected function getUser($token)
+    /**
+     * @param $request Request
+     * @return mixed
+     */
+    protected function getUser($request)
     {
         $userParser = new UserParser();
-        return $userParser->getUser($token);
+
+        $param = $request->only(['token']);
+        $token = $param['token'];
+        $user = $userParser->getUser($token);
+        return $user;
     }
 
 
