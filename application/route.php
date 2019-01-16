@@ -11,9 +11,9 @@
 
 use think\Route;
 
-Route::get('/', 'index/Index/index');
-Route::get('/login', 'index/Login/login');
-Route::get('/test', 'index/Index/test');
+Route::get('/', 'index/UserDataController/getUserData');
+Route::get('/login', 'index/LoginController/login');
+Route::get('/test', 'index/TestController/test');
 
 
 

@@ -11,7 +11,7 @@ namespace app\index\controller;
 
 use think\Request;
 
-class Error
+class ErrorController
 {
     public function index(Request $request)
     {

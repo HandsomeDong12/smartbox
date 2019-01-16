@@ -9,7 +9,7 @@ use app\index\tools\Token;
 use think\Request;
 
 
-class Index extends Controller
+class TestController extends Controller
 {
     public function index()
     {

@@ -13,21 +13,23 @@ use app\index\service\Database;
 use app\index\tools\Token;
 use think\Request;
 
-class Login
+class LoginController extends Controller
 {
 
+
     /**
+     * @param Request $request
+     * @return array
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
      * @throws \think\exception\DbException
      */
-    public function login()
+    public function login(Request $request)
     {
         $database = new Database();
         $loginJson = new LoginResult();
         $token = null;
 
-        $request = Request::instance();
         $param = $request->param();
         $data = $database->login($param);
 

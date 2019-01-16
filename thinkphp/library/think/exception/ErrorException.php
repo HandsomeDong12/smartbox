@@ -43,7 +43,7 @@ class ErrorException extends Exception
         $this->line     = $line;
         $this->code     = 0;
 
-        empty($context) || $this->setData('Error Context', $context);
+        empty($context) || $this->setData('ErrorController Context', $context);
     }
 
     /**

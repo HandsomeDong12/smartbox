@@ -85,7 +85,7 @@ return [
     'filesize not match'                                        => '上传文件大小不符！',
     'directory {:path} creation failed'                         => '目录 {:path} 创建失败！',
 
-    // Validate Error Message
+    // Validate ErrorController Message
     ':attribute require'                                        => ':attribute不能为空',
     ':attribute must be numeric'                                => ':attribute必须是数字',
     ':attribute must be integer'                                => ':attribute必须是整数',
