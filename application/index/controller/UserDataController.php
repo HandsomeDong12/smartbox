@@ -32,8 +32,8 @@ class UserDataController extends Controller
     {
         $param = $request->only(['token']);
         $user = $this->getUser($param['token']);
-        //$userData = $this->database->getUserData($user);
-        return $user;
+        $userData = $this->database->getUserData($user);
+        return $userData;
     }
 
 
