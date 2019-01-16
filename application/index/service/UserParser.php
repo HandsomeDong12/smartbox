@@ -20,7 +20,7 @@ class UserParser
     public function __construct()
     {
         $this->key = 'YUHAIDONG';
-        $this->alg = 'HS256';
+        $this->alg = ['HS256'];
 
     }
 
