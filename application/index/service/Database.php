@@ -66,7 +66,7 @@ class Database
      */
     public function getMedicine($user)
     {
-        $medicine = Db::table('medicineStatus')
+        $medicine = Db::table('medicine')
             ->where('usernum', $user)
             ->field('status, name')
             ->find();
