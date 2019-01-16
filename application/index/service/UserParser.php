@@ -27,7 +27,7 @@ class UserParser
     public function parseToken($token)
     {
         $data = JWT::decode($token, $this->key, $this->alg);
-        $user = $data['uid'];
+        $user = $data->uid;
         return $user;
 
     }
