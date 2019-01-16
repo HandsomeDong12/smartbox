@@ -33,7 +33,7 @@ class LoginController extends Controller
         $param = $request->param();
         $data = $database->login($param);
 
-        if (count($data) == 0) {
+        if (is_null($data)) {
             $result = $loginJson->getFailedResult();
         } else {
             $token = Token::getToken($request->param('usernum'));

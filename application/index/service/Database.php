@@ -36,7 +36,7 @@ class Database
         $data = Db::table('test')
             ->where('usernum', $user)
             ->where('passwd', $passWd)
-            ->field('username, usernum')->select();
+            ->field('username, usernum')->find();
 
         return $data;
     }

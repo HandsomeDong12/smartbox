@@ -34,7 +34,6 @@ class MedicineController extends Controller
 
         $status = $this->database->getMedicineStatus($user);
 
-
         return $status;
     }
 }
