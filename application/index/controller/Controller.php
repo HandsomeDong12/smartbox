@@ -15,7 +15,7 @@ class Controller
 {
     private $userParser;
 
-    protected function __construct(UserParser $userParser)
+    public function __construct(UserParser $userParser)
     {
         $this->userParser = $userParser;
     }
