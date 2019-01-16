@@ -43,7 +43,8 @@ class Index extends Controller
             return $result;
         } else {
             $token = Token::getToken($request->param('usernum'));
-            return $this->getUser($token);
+
+            return $this->userParser->getUser($token);
         }
 
     }
