@@ -9,7 +9,7 @@ use app\index\tools\Token;
 use think\Request;
 
 
-class Index
+class Index extends Controller
 {
     private $userParser;
 
@@ -43,8 +43,7 @@ class Index
             return $result;
         } else {
             $token = Token::getToken($request->param('usernum'));
-            $test = $this->userParser->parseToken($token);
-            return $test;
+            return $this->getUser($token);
         }
 
     }

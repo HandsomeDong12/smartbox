@@ -4,10 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/application/index/controller/Login.php" description="&#10;use app\index\model\LoginResult;&#10;use app\index\se..." line="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003b7c84-8d6f-44f5-b375-3467079d40a0" name="Default Changelist" comment="gitignore config">
+    <list default="true" id="003b7c84-8d6f-44f5-b375-3467079d40a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application/index/controller/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/database.example" beforeDir="false" afterPath="$PROJECT_DIR$/application/database.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/index/service/UserParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/service/UserParser.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,23 +23,32 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/index/service/UserParser.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+                <state relative-caret-position="315">
+                  <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#40#72#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
+            <entry file="file://$PROJECT_DIR$/application/index/controller/Controller.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="74">
-                  <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#40#72#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="300">
+                  <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -106,8 +115,6 @@
         <option value="$PROJECT_DIR$/application/index/controller/Error.php" />
         <option value="$PROJECT_DIR$/application/.gitignore" />
         <option value="$PROJECT_DIR$/vendor/.gitignore" />
-        <option value="$PROJECT_DIR$/application/database.example" />
-        <option value="$PROJECT_DIR$/application/database.php" />
         <option value="$PROJECT_DIR$/application/index/model/Token.php" />
         <option value="$PROJECT_DIR$/application/index/Tools/Token.php" />
         <option value="$PROJECT_DIR$/application/route.php" />
@@ -118,8 +125,11 @@
         <option value="$PROJECT_DIR$/application/config.php" />
         <option value="$PROJECT_DIR$/application/index/model/LoginResult.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Login.php" />
-        <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/database.php" />
+        <option value="$PROJECT_DIR$/application/database.example" />
         <option value="$PROJECT_DIR$/application/index/service/UserParser.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/Controller.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
       </list>
     </option>
   </component>
@@ -170,13 +180,6 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartbox" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smartbox" type="b2602c69:ProjectViewProjectNode" />
@@ -244,7 +247,7 @@
       <workItem from="1547308073968" duration="8399000" />
       <workItem from="1547359654707" duration="128000" />
       <workItem from="1547359788283" duration="12153000" />
-      <workItem from="1547646690603" duration="3145000" />
+      <workItem from="1547646690603" duration="3947000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore config">
       <created>1547308497875</created>
@@ -491,11 +494,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547649770666</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="gitignore config">
+      <created>1547649872039</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1547649872039</updated>
+    </task>
+    <task id="LOCAL-00037" summary="gitignore config">
+      <created>1547649899030</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1547649899030</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23825000" />
+    <option name="totallyTimeSpent" value="24627000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -510,7 +527,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.257886" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.257886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -523,7 +540,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -677,20 +694,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#40#72#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/service/UserParser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        <state relative-caret-position="315">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+          <folding>
+            <element signature="e#40#72#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -24,12 +24,11 @@ class UserParser
 
     }
 
-    public function parseToken($token)
+    public function getUser($token)
     {
         $data = JWT::decode($token, $this->key, $this->alg);
         $user = $data->uid;
         return $user;
-
     }
 
 }
