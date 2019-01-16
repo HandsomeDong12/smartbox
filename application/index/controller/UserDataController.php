@@ -33,7 +33,7 @@ class UserDataController extends Controller
         $token = $request->only(['token']);
         $user = $this->getUser($token);
         $userData = $this->database->getUserData($user);
-        return $userData;
+        return $user;
     }
 
 
