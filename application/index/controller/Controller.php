@@ -13,16 +13,11 @@ use app\index\service\UserParser;
 
 class Controller
 {
-    private $userParser;
-
-    public function __construct(UserParser $userParser)
-    {
-        $this->userParser = $userParser;
-    }
 
     protected function getUser($token)
     {
-        return $this->userParser->getUser($token);
+        $userParser = new UserParser();
+        return $userParser->getUser($token);
     }
 
 

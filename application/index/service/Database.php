@@ -21,24 +21,40 @@ class Database
 
     /**
      * @param $param
-     * @return false|\PDOStatement|string|\think\Collection
+     * @return false|string|\think\Collection
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
-     * @throws \think\exception\DbException
+     * @throws \think\exception
      */
     public function login($param)
     {
         //$data = Db::query("select username, usernum from test where usernum = '$param[usernum]' and passwd = '$param[passwd]'");
 
-        $userNum = $param['usernum'];
+        $user = $param['usernum'];
         $passWd = $param['passwd'];
 
         $data = Db::table('test')
-            ->where('usernum', $userNum)
+            ->where('usernum', $user)
             ->where('passwd', $passWd)
             ->field('username, usernum')->select();
 
         return $data;
+    }
+
+
+    /**
+     * @param $user
+     * @return array|false|string|\think\Model
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
+    public function getUserData($user)
+    {
+        $userData = Db::table('test')
+            ->where('usernum', $user)
+            ->find();
+        return $userData;
     }
 
 }
