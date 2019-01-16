@@ -13,7 +13,7 @@ use think\Route;
 
 Route::get('/', 'index/TestController/test');
 Route::get('/login', 'index/LoginController/login');
-Route::get('/test', 'index/UserDataController/getUserData');
+Route::get('/test', 'index/MedicineController/getMedicine');
 
 
 

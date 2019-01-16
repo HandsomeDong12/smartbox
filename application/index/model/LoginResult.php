@@ -24,7 +24,7 @@ class LoginResult
         $this->successfulStatus = 1;
         $this->failedStatus = 0;
         $this->successfulMessage = 'Successfully login!';
-        $this->failedMessage = 'ErrorController account or password, please try again!';
+        $this->failedMessage = 'Error account or password, please try again!';
     }
 
 

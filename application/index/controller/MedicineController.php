@@ -23,17 +23,21 @@ class MedicineController extends Controller
 
     /**
      * @param Request $request
-     * @return false|string|\think\Collection
+     * @return array
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
      * @throws \think\exception\DbException
      */
-    public function getStatus(Request $request)
+    public function getMedicine(Request $request)
     {
         $user = $this->getUser($request);
 
-        $status = $this->database->getMedicineStatus($user);
+        $medicine = $this->database->getMedicine($user);
 
-        return $status;
+        if (is_null($medicine)) {
+            return ['error' => 'You has no medicine'];
+        }
+
+        return $medicine;
     }
 }

@@ -21,7 +21,7 @@ class Database
 
     /**
      * @param $param
-     * @return false|string|\think\Collection
+     * @return null|array
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
      * @throws \think\exception
@@ -44,7 +44,7 @@ class Database
 
     /**
      * @param $user
-     * @return array|false|string|\think\Model
+     * @return null|array
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
      * @throws \think\exception\DbException
@@ -59,19 +59,19 @@ class Database
 
     /**
      * @param $user
-     * @return false|string|\think\Collection
+     * @return null|array
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
      * @throws \think\exception\DbException
      */
-    public function getMedicineStatus($user)
+    public function getMedicine($user)
     {
-        $status = Db::table('medicineStatus')
+        $medicine = Db::table('medicineStatus')
             ->where('usernum', $user)
-            ->field('status')
+            ->field('status, name')
             ->find();
 
-        return $status;
+        return $medicine;
     }
 
 }
