@@ -1170,7 +1170,7 @@ class Process
 
         if (true !== @proc_terminate($this->process, $signal)) {
             if ($throwException) {
-                throw new \RuntimeException(sprintf('ErrorController while sending signal `%s`.', $signal));
+                throw new \RuntimeException(sprintf('Error while sending signal `%s`.', $signal));
             }
 
             return false;

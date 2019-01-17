@@ -520,7 +520,7 @@ abstract class Connection
             }
             if (!$result) {
                 throw new BindParamException(
-                    "ErrorController occurred  when binding parameters '{$param}'",
+                    "Error occurred  when binding parameters '{$param}'",
                     $this->config,
                     $this->getLastsql(),
                     $bind
@@ -549,7 +549,7 @@ abstract class Connection
             if (!$result) {
                 $param = array_shift($val);
                 throw new BindParamException(
-                    "ErrorController occurred  when binding parameters '{$param}'",
+                    "Error occurred  when binding parameters '{$param}'",
                     $this->config,
                     $this->getLastsql(),
                     $bind
@@ -813,11 +813,11 @@ abstract class Connection
             'no connection to the server',
             'Lost connection',
             'is dead or not enabled',
-            'ErrorController while sending',
+            'Error while sending',
             'decryption failed or bad record mac',
             'server closed the connection unexpectedly',
             'SSL connection has been closed unexpectedly',
-            'ErrorController writing data to the connection',
+            'Error writing data to the connection',
             'Resource deadlock avoided',
             'failed with errno',
         ];
