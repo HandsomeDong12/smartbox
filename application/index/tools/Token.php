@@ -39,9 +39,8 @@ class Token
             "uid" => $uid
         ];
         $key = 'YUHAIDONG';
-        $alg = ['HS256'];
 
-        $token = JWT::encode($tokenConfig,$key, $alg);
+        $token = JWT::encode($tokenConfig,$key);
 
         return $token;
     }
