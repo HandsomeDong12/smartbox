@@ -60,9 +60,9 @@ class LoginController extends Controller
         $userData = $this->database->getUserData($user);
 
         if (is_null($userData)) {
-            return ['error' => 'You has no medicine'];
+            return ['error' => 'Failed'];
         }
-        return $userData;
+        return $user;
     }
 
 }
