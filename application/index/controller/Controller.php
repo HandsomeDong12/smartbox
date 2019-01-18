@@ -25,8 +25,8 @@ class Controller
 
         $param = $request->only(['token']);
         $token = $param['token'];
-        //$user = $userParser->getUser($token);
-        return $token;
+        $user = $userParser->getUser($token);
+        return $user;
     }
 
 
