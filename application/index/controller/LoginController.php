@@ -57,12 +57,13 @@ class LoginController extends Controller
     {
         $user = $this->getUser($request);
 
-        $userData = $this->database->getUserData($user);
+        $userData= $this->database->getUserData($user);
 
         if (is_null($userData)) {
             return ['error' => 'Failed'];
         }
-        return $user;
+
+        return $userData;
     }
 
 }
