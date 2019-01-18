@@ -15,7 +15,12 @@ use think\Request;
 
 class LoginController extends Controller
 {
+    private $database;
 
+    public function __construct(Database $database)
+    {
+        $this->database = $database;
+    }
 
     /**
      * @param Request $request
@@ -26,12 +31,11 @@ class LoginController extends Controller
      */
     public function login(Request $request)
     {
-        $database = new Database();
         $loginJson = new LoginResult();
         $token = null;
 
         $param = $request->param();
-        $data = $database->login($param);
+        $data = $this->database->login($param);
 
         if (is_null($data)) {
             $result = $loginJson->getFailedResult();
@@ -41,4 +45,24 @@ class LoginController extends Controller
         }
         return $result;
     }
+
+    /**
+     * @param Request $request
+     * @return array|null
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
+    public function getUserData(Request $request)
+    {
+        $user = $this->getUser($request);
+
+        $userData = $this->database->getUserData($user);
+
+        if (is_null($userData)) {
+            return ['error' => 'You has no medicine'];
+        }
+        return $userData;
+    }
+
 }

@@ -32,6 +32,10 @@ class UserDataController extends Controller
     {
         $user = $this->getUser($request);
         $userData = $this->database->getUserData($user);
+
+        if (is_null($userData)) {
+            return ['error' => 'You has no medicine'];
+        }
         return $userData;
     }
 
