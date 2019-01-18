@@ -32,7 +32,7 @@ class UserDataController extends Controller
     {
         $user = $this->getUser($request);
         $userData = $this->database->getUserData($user);
-        return $user;
+        return $userData;
     }
 
 
