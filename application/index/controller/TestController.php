@@ -23,7 +23,7 @@ class TestController extends Controller
 
     public function test()
     {
-        $user = new User();
+        $user = new User;
         $user->userId = 9999;
         $user->password = 'test';
         $user->userName = 'fuck';
