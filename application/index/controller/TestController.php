@@ -3,6 +3,7 @@
 namespace app\index\controller;
 
 use app\index\model\LoginResult;
+use app\index\model\User;
 use app\index\service\Database;
 use app\index\service\UserParser;
 use app\index\tools\Token;
@@ -22,54 +23,12 @@ class TestController extends Controller
 
     public function test()
     {
-        $database = new Database();
-        $loginJson = new LoginResult();
-        $token = null;
-
-        $request = Request::instance();
-        $param = $request->param();
-        $data = $database->login($param);
-
-        if (count($data) == 0) {
-            $result = $loginJson->getFailedResult();
-            return $result;
-        } else {
-            $token = Token::getToken($request->param('usernum'));
-
-            return $token;
-        }
-
+        $user = new User();
+        $user->where('userId', '18814215401')->find();
+        return ['test' => $user->password];
     }
 
-    public function fuck()
-    {
-        return json(['message' => 'Fuck your mother!!!']);
-    }
 
-    /**
-     * @return \think\response\Json
-     * @throws \think\db\exception\DataNotFoundException
-     * @throws \think\db\exception\ModelNotFoundException
-     * @throws \think\exception\DbException
-     */
-    public function login()
-    {
-        $database = new Database();
 
-        $request = Request::instance();
-        $param = $request->param();
 
-        $data = $database->login($param);
-
-        if (count($data) == 0) {
-            $code = 400;
-            $message = 'failed';
-        } else {
-            $code = 200;
-            $message = 'successful';
-        }
-
-        return json(['data' => $data, 'code' => $code, 'message' => $message]);
-
-    }
 }

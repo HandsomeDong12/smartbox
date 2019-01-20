@@ -16,7 +16,7 @@ Route::get('/login', 'index/LoginController/login');
 Route::get('/user', 'index/LoginController/getUserData');
 
 
-Route::get('/test', 'index/MedicineController/getMedicine');
+Route::get('/test', 'index/TestController/test');
 
 
 
