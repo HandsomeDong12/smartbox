@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="003b7c84-8d6f-44f5-b375-3467079d40a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/application/index/controller/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/TestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/model/User.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +21,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/index/model/User.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+                <state relative-caret-position="150">
+                  <caret line="15" selection-start-line="15" selection-end-line="17" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -29,8 +30,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/index/controller/TestController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+                <state relative-caret-position="435">
+                  <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
                   <folding>
                     <element signature="e#40#72#0#PHP" expanded="true" />
                   </folding>
@@ -235,21 +236,7 @@
       <workItem from="1547359788283" duration="12153000" />
       <workItem from="1547646690603" duration="9716000" />
       <workItem from="1547830305255" duration="3375000" />
-      <workItem from="1547996470502" duration="3747000" />
-    </task>
-    <task id="LOCAL-00042" summary="Controller">
-      <created>1547651788867</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1547651788867</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Controller">
-      <created>1547651853718</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1547651853718</updated>
+      <workItem from="1547996470502" duration="4055000" />
     </task>
     <task id="LOCAL-00044" summary="Controller">
       <created>1547652037120</created>
@@ -580,11 +567,25 @@
       <option name="project" value="LOCAL" />
       <updated>1548000014081</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Controller">
+      <created>1548000234099</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1548000234099</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Controller">
+      <created>1548000268699</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1548000268699</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37518000" />
+    <option name="totallyTimeSpent" value="37826000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -831,15 +832,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/model/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="150">
+          <caret line="15" selection-start-line="15" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/TestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        <state relative-caret-position="435">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding>
             <element signature="e#40#72#0#PHP" expanded="true" />
           </folding>

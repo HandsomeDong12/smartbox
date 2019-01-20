@@ -28,6 +28,8 @@ class TestController extends Controller
         $user->password = '123123';
         $user->userName = '564';
         $user->save();
+        $test = User::get('123123123123');
+        return ['data' => $test];
     }
 
 
