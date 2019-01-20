@@ -29,8 +29,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/index/controller/TestController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+                <state relative-caret-position="330">
+                  <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
@@ -221,21 +221,7 @@
       <workItem from="1547359788283" duration="12153000" />
       <workItem from="1547646690603" duration="9716000" />
       <workItem from="1547830305255" duration="3375000" />
-      <workItem from="1547996470502" duration="1223000" />
-    </task>
-    <task id="LOCAL-00023" summary="gitignore config">
-      <created>1547368280702</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1547368280702</updated>
-    </task>
-    <task id="LOCAL-00024" summary="gitignore config">
-      <created>1547368423519</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1547368423519</updated>
+      <workItem from="1547996470502" duration="1496000" />
     </task>
     <task id="LOCAL-00025" summary="gitignore config">
       <created>1547368484226</created>
@@ -566,11 +552,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547997504773</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Controller">
+      <created>1547997706370</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1547997706370</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Controller">
+      <created>1547997921927</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1547997921927</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34994000" />
+    <option name="totallyTimeSpent" value="35267000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -814,8 +814,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/TestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="330">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
         </state>
       </provider>
     </entry>
