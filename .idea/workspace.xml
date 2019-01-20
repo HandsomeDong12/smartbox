@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003b7c84-8d6f-44f5-b375-3467079d40a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/index/model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/index/controller/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/TestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/route.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +21,7 @@
             <entry file="file://$PROJECT_DIR$/application/index/model/User.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="165">
-                  <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+                  <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -32,8 +29,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/index/controller/TestController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+                <state relative-caret-position="390">
+                  <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
                 </state>
               </provider>
             </entry>
@@ -224,14 +221,7 @@
       <workItem from="1547359788283" duration="12153000" />
       <workItem from="1547646690603" duration="9716000" />
       <workItem from="1547830305255" duration="3375000" />
-      <workItem from="1547996470502" duration="947000" />
-    </task>
-    <task id="LOCAL-00022" summary="gitignore config">
-      <created>1547368050502</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1547368050503</updated>
+      <workItem from="1547996470502" duration="1223000" />
     </task>
     <task id="LOCAL-00023" summary="gitignore config">
       <created>1547368280702</created>
@@ -569,11 +559,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547833163593</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Controller">
+      <created>1547997504772</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1547997504773</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34718000" />
+    <option name="totallyTimeSpent" value="34994000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,6 +583,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26342005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -803,7 +801,7 @@
     <entry file="file://$PROJECT_DIR$/application/index/model/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -816,8 +814,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/TestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="390">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
