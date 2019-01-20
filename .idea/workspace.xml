@@ -29,8 +29,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/index/controller/TestController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+                <state relative-caret-position="405">
+                  <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
                   <folding>
                     <element signature="e#40#72#0#PHP" expanded="true" />
                   </folding>
@@ -235,21 +235,7 @@
       <workItem from="1547359788283" duration="12153000" />
       <workItem from="1547646690603" duration="9716000" />
       <workItem from="1547830305255" duration="3375000" />
-      <workItem from="1547996470502" duration="3409000" />
-    </task>
-    <task id="LOCAL-00040" summary="Controller">
-      <created>1547650911186</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1547650911186</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Controller">
-      <created>1547651032989</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1547651032989</updated>
+      <workItem from="1547996470502" duration="3747000" />
     </task>
     <task id="LOCAL-00042" summary="Controller">
       <created>1547651788867</created>
@@ -580,11 +566,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547999806442</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Controller">
+      <created>1547999895409</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1547999895409</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Controller">
+      <created>1548000014081</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1548000014081</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37180000" />
+    <option name="totallyTimeSpent" value="37518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -838,8 +838,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/TestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        <state relative-caret-position="405">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding>
             <element signature="e#40#72#0#PHP" expanded="true" />
           </folding>

@@ -13,8 +13,4 @@ use think\Model;
 
 class User extends Model
 {
-    public $userId;
-    public $userName;
-    public $password;
-
 }
