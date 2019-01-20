@@ -28,6 +28,9 @@ class TestController extends Controller
         $user->password = 'test';
         $user->userName = 'fuck';
         $user->save();
+        $test = new User();
+        $aa = $test->find();
+        return ['data' => $aa];
 
 
     }
