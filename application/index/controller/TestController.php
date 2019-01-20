@@ -24,8 +24,10 @@ class TestController extends Controller
     public function test()
     {
         $user = new User();
-        $user = $user->where('userId', '12345')->find();
+        $user->where('userId', '12345');
         return ['test' => $user->password];
+
+
     }
 
 
