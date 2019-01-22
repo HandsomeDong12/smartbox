@@ -25,13 +25,13 @@ class TestController extends Controller
     {
         $user = new User;
         $user->data([
-            'userId' => 454656,
+            'userId' => 454657,
             'userName' => 'fweqfqw',
             'password' => 'teteet'
         ]);
         $user->save();
 
-        $test = User::get('454656');
+        $test = User::get('454657');
         return ['data' => $test];
     }
 
