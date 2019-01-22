@@ -441,7 +441,6 @@
 
     <div class="copyright">
         <a title="github" href="https://github.com/HandsomeDong12/SmartBox">github-HandsomeDong</a>
-        <span>V<?php echo THINK_VERSION; ?></span> 
         <span>{ 七里翔-余海东 }</span>
     </div>
     <?php if(\think\App::$debug) { ?>
