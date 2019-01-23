@@ -64,7 +64,7 @@ class Database
         $user = new User();
         $medicine = new Medicine();
 
-        $userId = $user->where('userId', $userId)->select('userId')->find();
+        $userId = $user->where('userId', $userId)->select('userId');
 
         $medicineData = $medicine->where('', $userId)->find();
 
