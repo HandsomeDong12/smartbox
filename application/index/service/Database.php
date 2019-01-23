@@ -28,8 +28,8 @@ class Database
 
         $user = new User();
 
-        $data = $user->field('userId', $userId)
-            ->field('password', $password)
+        $data = $user->where('userId', $userId)
+            ->where('password', $password)
             ->find();
 
         return $data;
@@ -47,7 +47,7 @@ class Database
     {
         $user = new User();
 
-        $userData = $user->field('userId', $userId)->find();
+        $userData = $user->where('userId', $userId)->find();
 
         return $userData;
     }
@@ -63,7 +63,7 @@ class Database
     {
         $medicine = new Medicine();
 
-        $medicineData = $medicine->field('userId', $userId)->find();
+        $medicineData = $medicine->where('userId', $userId)->find();
 
         return $medicineData;
     }
