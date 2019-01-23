@@ -61,9 +61,12 @@ class Database
      */
     public function getMedicine($userId)
     {
+        $user = new User();
         $medicine = new Medicine();
 
-        $medicineData = $medicine->where('userId', $userId)->find();
+        $userId = $user->where('userId', $userId)->select('userId')->find();
+
+        $medicineData = $medicine->where('', $userId)->find();
 
         return $medicineData;
     }
