@@ -10,17 +10,9 @@ namespace app\index\service;
 
 use app\index\model\Medicine;
 use app\index\model\User;
-use think\Db;
 
 class Database
 {
-
-    public function test1()
-    {
-        Db::table('test');
-    }
-
-
     /**
      * @param $param
      * @return null|array
@@ -31,17 +23,12 @@ class Database
     public function login($param)
     {
 
-        $user = $param['userId'];
+        $userId = $param['userId'];
         $password = $param['password'];
-//
-//        $data = Db::table('test')
-//            ->where('usernum', $user)
-//            ->where('passwd', $passWd)
-//            ->field('username, usernum')->find();
 
         $user = new User();
 
-        $data = $user->field('userId', $user)
+        $data = $user->field('userId', $userId)
             ->field('password', $password)
             ->find();
 
@@ -50,42 +37,33 @@ class Database
 
 
     /**
-     * @param $user
+     * @param $userId
      * @return null|array
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
      * @throws \think\exception\DbException
      */
-    public function getUserData($user)
+    public function getUserData($userId)
     {
-//        $userData = Db::table('test')
-//            ->where('usernum', $user)
-//            ->find();
-
         $user = new User();
 
-        $userData = $user->field('userId', $user)->find();
+        $userData = $user->field('userId', $userId)->find();
 
         return $userData;
     }
 
     /**
-     * @param $user
+     * @param $userId
      * @return null|array
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
      * @throws \think\exception\DbException
      */
-    public function getMedicine($user)
+    public function getMedicine($userId)
     {
-//        $medicine = Db::table('medicine')
-//            ->where('usernum', $user)
-//            ->field('status, name')
-//            ->find();
-
         $medicine = new Medicine();
 
-        $medicineData = $medicine->field('userId', $user)->find();
+        $medicineData = $medicine->field('userId', $userId)->find();
 
         return $medicineData;
     }

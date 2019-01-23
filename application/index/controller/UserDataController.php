@@ -30,8 +30,8 @@ class UserDataController extends Controller
      */
     public function getUserData(Request $request)
     {
-        $user = $this->getUser($request);
-        $userData = $this->database->getUserData($user);
+        $userId = $this->getUser($request);
+        $userData = $this->database->getUserData($userId);
 
         if (is_null($userData)) {
             return ['error' => 'You has no medicine'];

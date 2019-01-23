@@ -30,9 +30,9 @@ class MedicineController extends Controller
      */
     public function getMedicine(Request $request)
     {
-        $user = $this->getUser($request);
+        $userId = $this->getUser($request);
 
-        $medicine = $this->database->getMedicine($user);
+        $medicine = $this->database->getMedicine($userId);
 
         if (is_null($medicine)) {
             return ['error' => 'You has no medicine'];

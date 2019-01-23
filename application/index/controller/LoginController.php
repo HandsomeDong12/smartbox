@@ -55,9 +55,9 @@ class LoginController extends Controller
      */
     public function getUserData(Request $request)
     {
-        $user = $this->getUser($request);
+        $userId = $this->getUser($request);
 
-        $userData= $this->database->getUserData($user);
+        $userData= $this->database->getUserData($userId);
 
         if (is_null($userData)) {
             return ['status' => '0'];
