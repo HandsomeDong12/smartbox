@@ -8,6 +8,8 @@
 
 namespace app\index\service;
 
+use app\index\model\Medicine;
+use app\index\model\User;
 use think\Db;
 
 class Database
@@ -28,15 +30,20 @@ class Database
      */
     public function login($param)
     {
-        //$data = Db::query("select username, usernum from test where usernum = '$param[usernum]' and passwd = '$param[passwd]'");
 
-        $user = $param['usernum'];
-        $passWd = $param['passwd'];
+        $user = $param['userId'];
+        $password = $param['password'];
+//
+//        $data = Db::table('test')
+//            ->where('usernum', $user)
+//            ->where('passwd', $passWd)
+//            ->field('username, usernum')->find();
 
-        $data = Db::table('test')
-            ->where('usernum', $user)
-            ->where('passwd', $passWd)
-            ->field('username, usernum')->find();
+        $user = new User();
+
+        $data = $user->field('userId', $user)
+            ->field('password', $password)
+            ->find();
 
         return $data;
     }
@@ -51,9 +58,14 @@ class Database
      */
     public function getUserData($user)
     {
-        $userData = Db::table('test')
-            ->where('usernum', $user)
-            ->find();
+//        $userData = Db::table('test')
+//            ->where('usernum', $user)
+//            ->find();
+
+        $user = new User();
+
+        $userData = $user->field('userId', $user)->find();
+
         return $userData;
     }
 
@@ -66,12 +78,16 @@ class Database
      */
     public function getMedicine($user)
     {
-        $medicine = Db::table('medicine')
-            ->where('usernum', $user)
-            ->field('status, name')
-            ->find();
+//        $medicine = Db::table('medicine')
+//            ->where('usernum', $user)
+//            ->field('status, name')
+//            ->find();
 
-        return $medicine;
+        $medicine = new Medicine();
+
+        $medicineData = $medicine->field('userId', $user)->find();
+
+        return $medicineData;
     }
 
 }
