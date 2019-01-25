@@ -33,7 +33,7 @@ class MedicineController extends Controller
         $userId = $this->getUser($request);
 
         if (is_null($userId)){
-            $this->failedVerify();
+            return $this->failedVerify();
         }
 
         $medicine = $this->database->getMedicine($userId);

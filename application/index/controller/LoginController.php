@@ -58,7 +58,7 @@ class LoginController extends Controller
         $userId = $this->getUser($request);
 
         if (is_null($userId)){
-            $this->failedVerify();
+            return $this->failedVerify();
         }
 
         $userData= $this->database->getUserData($userId);
