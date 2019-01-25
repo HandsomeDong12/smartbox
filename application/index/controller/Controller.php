@@ -29,5 +29,9 @@ class Controller
         return $userId;
     }
 
+    protected function failedVerify()
+    {
+        return ['status' => -1, 'message' => 'token验证失败，请重新登陆！'];
+    }
 
 }
