@@ -42,10 +42,10 @@ class TestController extends Controller
 
         $userData= $this->database->getUserData($userId);
 
-        $medicineData = $medicine->where('cardId', $userData->userData['cardId'])->find();
+        //$medicineData = $medicine->where('cardId', $userData->userData['cardId'])->find();
 
 
-        return $userData->userData['cardId'];
+        return $userData;
 
     }
 
