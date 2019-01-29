@@ -3,6 +3,7 @@
 namespace app\index\controller;
 
 use app\index\model\LoginResult;
+use app\index\model\Medicine;
 use app\index\model\User;
 use app\index\service\Database;
 use app\index\service\UserParser;
@@ -23,19 +24,31 @@ class TestController extends Controller
     }
 
 
+    /**
+     * @param Request $request
+     * @return mixed
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
     public function test(Request $request)
     {
+        $userParser = new UserParser();
+
         $param = $request->only(['token']);
         $token = $param['token'];
 
-        $data = JWT::decode($token, $this->key, $this->alg);
-        $userId = $data->uid;
+        $userId = $userParser->getUser($token);
 
-        if ($userId){
-            return ['status' => -1, 'message' => 'token验证失败，请重新登陆！'];
-        }else{
-            return ['status' => 1, 'data' => $userId];
-        }
+        $user = new User();
+        $medicine = new Medicine();
+
+        $userData = $user->where('userId', $userId)->find();
+        $medicineData = $medicine->where('cardId', $userData->userData->cardId)->find();
+
+
+        return $medicineData;
+
     }
 
 
