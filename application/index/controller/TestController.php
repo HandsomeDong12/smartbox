@@ -14,13 +14,11 @@ use think\Request;
 
 class TestController extends Controller
 {
-    private $key;
-    private $alg = [];
+    private $database;
 
-    public function __construct()
+    public function __construct(Database $database)
     {
-        $this->key = 'YUHAIDONG';
-        $this->alg = ['HS256'];
+        $this->database = $database;
     }
 
 
@@ -40,10 +38,10 @@ class TestController extends Controller
 
         $userId = $userParser->getUser($token);
 
-        $user = new User();
         $medicine = new Medicine();
 
-        $userData = $user->where('userId', $userId)->find();
+        $userData= $this->database->getUserData($userId);
+
         $medicineData = $medicine->where('cardId', $userData->userData->cardId)->find();
 
 
