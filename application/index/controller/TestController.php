@@ -38,11 +38,12 @@ class TestController extends Controller
 
         $userId = $userParser->getUser($token);
 
+        $user = new User();
         $medicine = new Medicine();
 
-        $userData= $this->database->getUserData($userId);
+        $userData = $user->where('userId', $userId)->find();
 
-        //$medicineData = $medicine->where('cardId', $userData->userData['cardId'])->find();
+        $medicineData = $medicine->where('cardId', $userData['cardId'])->find();
 
 
         return $userData['cardId'];
