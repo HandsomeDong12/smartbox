@@ -45,7 +45,7 @@ class TestController extends Controller
         $medicineData = $medicine->where('cardId', $userData->userData->cardId)->find();
 
 
-        return $medicineData;
+        return $userData->userData->cardId;
 
     }
 
