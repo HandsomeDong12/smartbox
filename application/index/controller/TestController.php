@@ -9,6 +9,7 @@ use app\index\service\Database;
 use app\index\service\UserParser;
 use app\index\tools\Token;
 use Firebase\JWT\JWT;
+use Qcloud\Sms\SmsSingleSender;
 use think\Request;
 
 
@@ -31,22 +32,27 @@ class TestController extends Controller
      */
     public function test(Request $request)
     {
-        $userParser = new UserParser();
+        $appid = 1400125607; // 1400开头
 
-        $param = $request->only(['token']);
-        $token = $param['token'];
+        $appkey = "576634af0af8af302af510047fded680";
 
-        $userId = $userParser->getUser($token);
+        $phoneNumbers = ["18814215401"];
+        $templateId = 276016;  // NOTE: 这里的模板ID`7839`只是一个示例，真实的模板ID需要在短信控制台中申请
 
-        $user = new User();
-        $medicine = new Medicine();
+        $smsSign = "余海东个人主页";
 
-        $userData = $user->where('userId', $userId)->find();
+        try {
+            $ssender = new SmsSingleSender($appid, $appkey);
+            $params = ["5678"];
+            $result = $ssender->sendWithParam("86", $phoneNumbers[0], $templateId,
+                $params, $smsSign, "", "");  // 签名参数未提供或者为空时，会使用默认签名发送短信
+//            $rsp = json_decode($result);
+//            echo $result;
+            return $result;
+        } catch(\Exception $e) {
+            echo var_dump($e);
+        }
 
-        $medicineData = $medicine->where('cardId', $userData['cardId'])->find();
-
-
-        return $medicineData;
 
     }
 

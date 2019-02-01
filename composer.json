@@ -19,7 +19,9 @@
         "php": ">=5.4.0",
         "topthink/framework": "5.0.*",
         "firebase/php-jwt": "^5.0",
-        "ext-json": "*"
+        "ext-json": "*",
+        "qcloudsms/qcloudsms_php": "0.1.*"
+
     },
     "autoload": {
         "psr-4": {
