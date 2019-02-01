@@ -15,6 +15,9 @@ Route::get('/', 'index/TestController/test');
 Route::get('/login', 'index/LoginController/login');
 Route::get('/user', 'index/LoginController/getUserData');
 Route::get('/medicine', 'index/MedicineController/getMedicine');
+Route::get('/sendverification', 'index/RegisterController/sendVerification');
+Route::get('/register', 'index/RegisterController/register');
+
 
 
 Route::get('/test', 'index/TestController/test');

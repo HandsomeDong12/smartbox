@@ -36,7 +36,6 @@ class TestController extends Controller
         $smsSender = new SmsSender();
         $result = $smsSender->sendRegisterSms("18814215401", "9999");
         return $result;
-
     }
 
 
