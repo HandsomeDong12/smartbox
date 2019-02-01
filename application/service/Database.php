@@ -105,6 +105,13 @@ class Database
         $register->insert($data);
     }
 
+    public function deleteVerification($phoneNumber)
+    {
+        $register = new Register();
+
+        $register->where('phoneNumber', $phoneNumber)->delete();
+    }
+
     public function verify($phoneNumber, $verification)
     {
         $register = new Register();
@@ -134,7 +141,6 @@ class Database
         $result = $user->insert($data);
 
         return $result;
-
     }
 
 

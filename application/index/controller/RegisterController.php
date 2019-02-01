@@ -80,6 +80,8 @@ class RegisterController
 
         $result = $this->database->verify($phoneNumber, $verification);
         if ($result) {
+
+            $this->database->deleteVerification($phoneNumber);
             $result = $this->database->addUser($params);
             if ($result == 1){
                 $status = 1;
