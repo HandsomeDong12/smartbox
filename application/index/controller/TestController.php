@@ -39,7 +39,7 @@ class TestController extends Controller
         $phoneNumbers = ["18814215401"];
         $templateId = 276016;  // NOTE: 这里的模板ID`7839`只是一个示例，真实的模板ID需要在短信控制台中申请
 
-        $smsSign = "七里翔智能药柜";
+        $smsSign = "余海东个人主页";
 
         try {
             $ssender = new SmsSingleSender($appid, $appkey);
@@ -52,7 +52,6 @@ class TestController extends Controller
         } catch(\Exception $e) {
             echo var_dump($e);
         }
-
 
     }
 
