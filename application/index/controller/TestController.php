@@ -47,7 +47,9 @@ class TestController extends Controller
      */
     public function sendVerification(Request $request)
     {
-        $phoneNumber = $request->only(['phoneNumber']);
+        $param = $request->only(['phoneNumber']);
+
+        $phoneNumber = $param['phoneNumber'];
 
         $isUserIdExist = $this->isUserIdExist($phoneNumber);
 

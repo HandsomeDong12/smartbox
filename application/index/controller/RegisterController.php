@@ -46,7 +46,9 @@ class RegisterController
      */
     public function sendVerification(Request $request)
     {
-        $phoneNumber = $request->only(['phoneNumber']);
+        $param = $request->only(['phoneNumber']);
+
+        $phoneNumber = $param['phoneNumber'];
 
         $isUserIdExist = $this->isUserIdExist($phoneNumber);
 
@@ -69,8 +71,10 @@ class RegisterController
 
     public function register(Request $request)
     {
-        $phoneNumber = $request->only(['phoneNumber']);
-        $verification = $request->only(['verification']);
+        $params = $request->param();
+
+        $phoneNumber = $params['phoneNumber'];
+        $verification = $params['verification'];
 
         $params = $request->param();
 
