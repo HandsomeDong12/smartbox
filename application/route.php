@@ -20,6 +20,6 @@ Route::get('/register', 'index/RegisterController/register');
 
 
 
-Route::get('/test', 'index/TestController/test');
+Route::get('/test', 'index/TestController/sendVerification');
 
 

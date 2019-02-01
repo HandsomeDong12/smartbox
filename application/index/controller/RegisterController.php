@@ -35,7 +35,6 @@ class RegisterController
     {
         $isExist = $this->database->isUserIdExist($phoneNumber);
         return $isExist;
-
     }
 
     /**

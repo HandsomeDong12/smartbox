@@ -17,10 +17,47 @@ use think\Request;
 class TestController extends Controller
 {
     private $database;
+    private $smsSender;
 
-    public function __construct(Database $database)
+    public function __construct(Database $database, SmsSender $smsSender)
     {
         $this->database = $database;
+        $this->smsSender = $smsSender;
+    }
+
+    /**
+     * @param $phoneNumber
+     * @return bool
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
+    private function isUserIdExist($phoneNumber)
+    {
+        $isExist = $this->database->isUserIdExist($phoneNumber);
+        return $isExist;
+    }
+
+    /**
+     * @param Request $request
+     * @return array
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
+    public function sendVerification(Request $request)
+    {
+        $phoneNumber = $request->only(['phoneNumber']);
+
+        $isUserIdExist = $this->isUserIdExist($phoneNumber);
+
+        if ($isUserIdExist) {
+            $status = -1;
+        }else{
+            $status = 1;
+        }
+        return ['status' => $status];
+
     }
 
 
