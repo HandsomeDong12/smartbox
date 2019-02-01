@@ -6,7 +6,7 @@
  * Time: 6:19 AM
  */
 
-namespace app\index\service;
+namespace app\service;
 
 
 use Firebase\JWT\JWT;

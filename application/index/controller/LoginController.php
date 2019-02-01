@@ -9,7 +9,7 @@
 namespace app\index\controller;
 
 use app\index\model\LoginResult;
-use app\index\service\Database;
+use app\service\Database;
 use app\index\tools\Token;
 use think\Request;
 

@@ -9,7 +9,7 @@
 namespace app\index\controller;
 
 
-use app\index\service\Database;
+use app\service\Database;
 use think\Request;
 
 class MedicineController extends Controller

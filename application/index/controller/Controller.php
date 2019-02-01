@@ -9,7 +9,7 @@
 namespace app\index\controller;
 
 
-use app\index\service\UserParser;
+use app\service\UserParser;
 use think\Request;
 
 class Controller

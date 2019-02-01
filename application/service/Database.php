@@ -6,7 +6,7 @@
  * Time: 9:08 AM
  */
 
-namespace app\index\service;
+namespace app\service;
 
 use app\index\model\Medicine;
 use app\index\model\User;
@@ -70,5 +70,7 @@ class Database
 
         return $medicineData;
     }
+
+
 
 }
