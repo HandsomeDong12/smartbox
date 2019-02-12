@@ -148,7 +148,7 @@ class Database
     {
         $box = new Box();
 
-        $result = $box->where('status', 1)
+        $result = $box->where('status', 0)
             ->column('id');
 
         return $result;
