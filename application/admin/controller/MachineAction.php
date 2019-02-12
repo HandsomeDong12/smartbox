@@ -9,11 +9,21 @@
 namespace app\admin\controller;
 
 
+use app\service\Database;
+
 class MachineAction
 {
+    private $database;
+
+    public function __construct(Database $database)
+    {
+        $this->database = $database;
+    }
+
     public function getNullBoxes()
     {
-        return ['test' => 'test'];
+        $result = $this->database->getNullBoxes();
+        return $result;
     }
 
 }

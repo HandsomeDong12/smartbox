@@ -8,6 +8,7 @@
 
 namespace app\service;
 
+use app\admin\model\Box;
 use app\index\model\Medicine;
 use app\index\model\Register;
 use app\index\model\User;
@@ -139,6 +140,17 @@ class Database
         ];
 
         $result = $user->insert($data);
+
+        return $result;
+    }
+
+    public function getNullBoxes()
+    {
+        $box = new Box();
+
+        $result = $box->where('status', 0)
+            ->value('id')
+            ->select();
 
         return $result;
     }
