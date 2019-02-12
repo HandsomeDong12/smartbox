@@ -149,7 +149,7 @@ class Database
         $box = new Box();
 
         $result = $box->where('status', 0)
-            ->value('id');
+            ->column('id');
 
         return $result;
     }
