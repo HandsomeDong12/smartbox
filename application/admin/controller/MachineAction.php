@@ -23,7 +23,7 @@ class MachineAction
     public function getNullBoxes()
     {
         $result = $this->database->getNullBoxes();
-        return $result;
+        return ['data' => $result];
     }
 
 }
