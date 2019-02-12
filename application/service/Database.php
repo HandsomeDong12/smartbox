@@ -149,8 +149,7 @@ class Database
         $box = new Box();
 
         $result = $box->where('status', 0)
-            ->value('id')
-            ->select();
+            ->value('id');
 
         return $result;
     }
