@@ -119,11 +119,12 @@ class Database
 
         $result = $register->where('phoneNumber', $phoneNumber)
             ->where('verification', $verification);
-        if (is_null($result)) {
-            return false;
-        } else {
-            return true;
-        }
+//        if (is_null($result)) {
+//            return false;
+//        } else {
+//            return true;
+//        }
+        return $result;
 
     }
 
