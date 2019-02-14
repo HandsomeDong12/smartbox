@@ -113,13 +113,21 @@ class Database
         $register->where('phoneNumber', $phoneNumber)->delete();
     }
 
+    /**
+     * @param $phoneNumber
+     * @param $verification
+     * @return bool
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
     public function verify($phoneNumber, $verification)
     {
         $register = new Register();
 
         $result = $register->where('phoneNumber', $phoneNumber)
-            ->where('verification', $verification);
-	    ->find();
+            ->where('verification', $verification)
+	        ->find();
         if (is_null($result)) {
             return false;
         } else {
