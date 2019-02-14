@@ -79,19 +79,19 @@ class RegisterController
         $params = $request->param();
 
         $result = $this->database->verify($phoneNumber, $verification);
-        if ($result) {
-
-            $this->database->deleteVerification($phoneNumber);
-            $result = $this->database->addUser($params);
-            if ($result == 1){
-                $status = 1;
-            }else{
-                $status = 0;
-            }
-        } else {
-            $status = -1;
-        }
-        return ['status' => $status];
+//        if ($result) {
+//
+//            $this->database->deleteVerification($phoneNumber);
+//            $result = $this->database->addUser($params);
+//            if ($result == 1) {
+//                $status = 1;
+//            } else {
+//                $status = 0;
+//            }
+//        } else {
+//            $status = -1;
+//        }
+        return ['status' => $result];
 
     }
 
