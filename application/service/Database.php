@@ -119,7 +119,8 @@ class Database
 
         $result = $register->where('phoneNumber', $phoneNumber)
             ->where('verification', $verification);
-        if (0 == count($result)) {
+	    ->find();
+        if (is_null($result)) {
             return false;
         } else {
             return true;
