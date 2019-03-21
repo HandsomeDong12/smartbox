@@ -35,8 +35,7 @@ class Verification extends Controller
         $boxId = $this->database->getBoxId($verification);
         if (is_null($boxId)) {
             return [
-                'status' => 1,
-                'boxId' => $boxId
+                'status' => -1,
             ];
         } else {
             return[
