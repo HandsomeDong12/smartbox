@@ -174,10 +174,15 @@ class Database
     {
         $medicine = new Medicine();
 
-        $boxId = $medicine->where('verification', $verification)
+        $data = $medicine
+            ->where('verification', $verification)
             ->find();
 
-        return $boxId;
+        if (is_null($data)){
+            return null;
+        }else{
+            return $data['boxId'];
+        }
     }
 
 
