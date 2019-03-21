@@ -163,5 +163,22 @@ class Database
         return $result;
     }
 
+    /**
+     * @param $verification
+     * @return array|null|string|\think\Model
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
+    public function getBoxId($verification)
+    {
+        $medicine = new Medicine();
+
+        $boxId = $medicine->where('verification', $verification)
+            ->find();
+
+        return $boxId;
+    }
+
 
 }

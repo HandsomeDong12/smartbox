@@ -18,6 +18,7 @@ Route::get('/medicine', 'index/MedicineController/getMedicine');
 Route::get('/sendverification', 'index/RegisterController/sendVerification');
 Route::get('/register', 'index/RegisterController/register');
 Route::get('/box', 'admin/MachineAction/getNullBoxes');
+Route::get('/take', 'index/Verification/getMedicine');
 
 
 
