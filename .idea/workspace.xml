@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003b7c84-8d6f-44f5-b375-3467079d40a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/index/controller/Verification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/service/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/service/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/Verification.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Verification.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +20,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/index/controller/Verification.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="407">
-                  <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+                <state relative-caret-position="426">
+                  <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
                   <folding>
                     <element signature="e#129#154#0#PHP" expanded="true" />
                   </folding>
@@ -68,7 +64,7 @@
             <entry file="file://$PROJECT_DIR$/application/route.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="228">
-                  <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+                  <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -127,8 +123,8 @@
         <option value="$PROJECT_DIR$/application/index/controller/RegisterController.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Verifivation.php" />
         <option value="$PROJECT_DIR$/application/service/Database.php" />
-        <option value="$PROJECT_DIR$/application/index/controller/Verification.php" />
         <option value="$PROJECT_DIR$/application/route.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/Verification.php" />
       </list>
     </option>
   </component>
@@ -250,7 +246,7 @@
       <workItem from="1547996470502" duration="4421000" />
       <workItem from="1548246720408" duration="4416000" />
       <workItem from="1550128276531" duration="526000" />
-      <workItem from="1553154828968" duration="2062000" />
+      <workItem from="1553154828968" duration="2477000" />
     </task>
     <task id="LOCAL-00050" summary="Controller">
       <created>1547653360468</created>
@@ -599,7 +595,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45196000" />
+    <option name="totallyTimeSpent" value="45611000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -866,16 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Verification.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="e#129#154#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -896,7 +882,17 @@
     <entry file="file://$PROJECT_DIR$/application/route.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Verification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+          <folding>
+            <element signature="e#129#154#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
