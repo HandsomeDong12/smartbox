@@ -192,7 +192,7 @@ class Database
     {
         $medicine = Medicine::get($id);
 
-        $updateTime = \DateTime::ATOM;
+        $updateTime = time();
 
         $medicine['updateTime'] = $updateTime;
         $medicine['status'] = $status;
