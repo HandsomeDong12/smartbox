@@ -44,7 +44,7 @@ class StatusUpdaterController
 
         $result  = $this->database->updateMedicine($id, $status, $verification);
 
-        if ($result == 1 && $status = 3){
+        if ($result == 1 && $status == 3){
             $this->sendVerification($id, $verification);
         }
 
