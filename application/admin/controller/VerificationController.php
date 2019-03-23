@@ -6,13 +6,13 @@
  * Time: 16:37
  */
 
-namespace app\index\controller;
+namespace app\admin\controller;
 
 
 use app\service\Database;
 use think\Request;
 
-class VerificationController extends Controller
+class VerificationController
 {
     private $database;
 
