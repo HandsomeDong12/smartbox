@@ -17,8 +17,10 @@ Route::get('/user', 'index/LoginController/getUserData');
 Route::get('/medicine', 'index/MedicineController/getMedicine');
 Route::get('/sendverification', 'index/RegisterController/sendVerification');
 Route::get('/register', 'index/RegisterController/register');
+
 Route::get('/box', 'admin/MachineAction/getNullBoxes');
 Route::get('/take', 'admin/VerificationController/getMedicine');
+Route::get('/update', 'admin/StatusUpdaterController/update');
 
 
 

@@ -181,4 +181,20 @@ class Database
     }
 
 
+    /**
+     * @param $id
+     * @param $status
+     * @return false|int
+     * @throws \think\exception\DbException
+     */
+    public function updateMedicine($id, $status)
+    {
+        $medicine = Medicine::get($id);
+
+        $medicine['status'] = $status;
+        $result = $medicine->save();
+        return $result;
+    }
+
+
 }
