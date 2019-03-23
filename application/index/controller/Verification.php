@@ -40,7 +40,8 @@ class Verification extends Controller
         } else {
             return[
                 'status' => 1,
-                'boxId' => $medicineData
+                'boxId' => $medicineData['boxId'],
+                'medicine' => $medicineData['medicine']
             ];
         }
     }
