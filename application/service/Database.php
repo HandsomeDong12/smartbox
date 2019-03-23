@@ -127,7 +127,7 @@ class Database
 
         $result = $register->where('phoneNumber', $phoneNumber)
             ->where('verification', $verification)
-	        ->find();
+            ->find();
         if (is_null($result)) {
             return false;
         } else {
@@ -184,16 +184,35 @@ class Database
     /**
      * @param $id
      * @param $status
+     * @param $verification
      * @return false|int
      * @throws \think\exception\DbException
      */
-    public function updateMedicine($id, $status)
+    public function updateMedicine($id, $status, $verification)
     {
         $medicine = Medicine::get($id);
 
+        $updateTime = \DateTime::ATOM;
+
+        $medicine['updateTime'] = $updateTime;
         $medicine['status'] = $status;
+        $medicine['verification'] = $verification;
+
+
         $result = $medicine->save();
         return $result;
+    }
+
+    /**
+     * @param $id
+     * @return mixed
+     * @throws \think\exception\DbException
+     */
+    public function getPhoneNumber($id)
+    {
+        $medicine = Medicine::get($id);
+        $phoneNumber = $medicine['phoneNumber'];
+        return $phoneNumber;
     }
 
 

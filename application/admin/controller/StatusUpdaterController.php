@@ -36,10 +36,26 @@ class StatusUpdaterController
         $id = $params['id'];
         $status = $params['status'];
 
-        $result = $this->database->updateMedicine($id, $status);
+        if ($status == 3) {
+            $verification = rand(1000, 9999);
+        } else {
+            $verification = null;
+        }
+
+        $result  = $this->database->updateMedicine($id, $status, $verification);
+
+        if ($result == 1 && $status4 = 3){
+            $this->sendVerification($id, $verification);
+        }
 
         return ['result' => $result];
 
+    }
+
+    private function sendVerification($id, $verification)
+    {
+        $phoneNumber = $this->database->getPhoneNumber($id);
+        $this->smsSender->sendTakeMedicineSms($phoneNumber, $verification);
     }
 
 }
