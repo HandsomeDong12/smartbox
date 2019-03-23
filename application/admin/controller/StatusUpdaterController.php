@@ -44,7 +44,7 @@ class StatusUpdaterController
 
         $result  = $this->database->updateMedicine($id, $status, $verification);
 
-        if ($result == 1 && $status4 = 3){
+        if ($result == 1 && $status = 3){
             $this->sendVerification($id, $verification);
         }
 
@@ -52,6 +52,11 @@ class StatusUpdaterController
 
     }
 
+    /**
+     * @param $id
+     * @param $verification
+     * @throws \think\exception\DbException
+     */
     private function sendVerification($id, $verification)
     {
         $phoneNumber = $this->database->getPhoneNumber($id);
