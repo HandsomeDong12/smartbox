@@ -12,7 +12,7 @@ namespace app\index\controller;
 use app\service\Database;
 use think\Request;
 
-class Verification extends Controller
+class VerificationController extends Controller
 {
     private $database;
 
