@@ -170,19 +170,14 @@ class Database
      * @throws \think\db\exception\ModelNotFoundException
      * @throws \think\exception\DbException
      */
-    public function getBoxId($verification)
+    public function takeMedicine($verification)
     {
         $medicine = new Medicine();
 
         $data = $medicine
             ->where('verification', $verification)
             ->find();
-
-        if (is_null($data)){
-            return null;
-        }else{
-            return $data['boxId'];
-        }
+        return $data;
     }
 
 

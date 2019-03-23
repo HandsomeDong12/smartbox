@@ -32,15 +32,15 @@ class Verification extends Controller
     {
         $param = $request->only(['verification']);
         $verification = $param['verification'];
-        $boxId = $this->database->getBoxId($verification);
-        if (is_null($boxId)) {
+        $medicineData = $this->database->takeMedicine($verification);
+        if (is_null($medicineData)) {
             return [
                 'status' => -1,
             ];
         } else {
             return[
                 'status' => 1,
-                'boxId' => $boxId
+                'boxId' => $medicineData
             ];
         }
     }
