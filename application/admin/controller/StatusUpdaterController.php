@@ -29,24 +29,34 @@ class StatusUpdaterController
      * @return array
      * @throws \think\exception\DbException
      */
+    public function deliver(Request $request)
+    {
+        $params = $request->param();
+
+        $id = $params['id'];
+        $boxId = $params['boxId'];
+
+        $result = $this->database->deliverMedicine($id, $boxId);
+
+        return ['result' => $result];
+    }
+
+    /**
+     * @param Request $request
+     * @return array
+     * @throws \think\exception\DbException
+     */
     public function update(Request $request)
     {
         $params = $request->param();
 
         $id = $params['id'];
-        $status = $params['status'];
 
-        if ($status == 3) {
-            $verification = rand(1000, 9999);
-        } else {
-            $verification = null;
-        }
+        $verification = rand(1000, 9999);
 
-        $result  = $this->database->updateMedicine($id, $status, $verification);
+        $result  = $this->database->updateMedicine($id, $verification);
 
-        if ($result == 1 && $status == 3){
-            $this->sendVerification($id, $verification);
-        }
+        $this->sendVerification($id, $verification);
 
         return ['result' => $result];
 

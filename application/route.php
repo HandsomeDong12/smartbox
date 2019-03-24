@@ -20,6 +20,8 @@ Route::get('/register', 'index/RegisterController/register');
 
 Route::get('/box', 'admin/MachineAction/getNullBoxes');
 Route::get('/take', 'admin/VerificationController/getMedicine');
+
+Route::get('/deliver', 'admin/StatusUpdaterController/deliver');
 Route::get('/update', 'admin/StatusUpdaterController/update');
 
 

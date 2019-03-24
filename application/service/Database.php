@@ -183,19 +183,39 @@ class Database
 
     /**
      * @param $id
-     * @param $status
-     * @param $verification
+     * @param $boxId
      * @return false|int
      * @throws \think\exception\DbException
      */
-    public function updateMedicine($id, $status, $verification)
+    public function deliverMedicine($id, $boxId)
     {
         $medicine = Medicine::get($id);
 
         $updateTime = time();
 
         $medicine['updateTime'] = $updateTime;
-        $medicine['status'] = $status;
+        $medicine['status'] = 2;
+        $medicine['boxId'] = $boxId;
+
+        $result = $medicine->save();
+        return $result;
+    }
+
+
+    /**
+     * @param $id
+     * @param $verification
+     * @return false|int
+     * @throws \think\exception\DbException
+     */
+    public function updateMedicine($id, $verification)
+    {
+        $medicine = Medicine::get($id);
+
+        $updateTime = time();
+
+        $medicine['updateTime'] = $updateTime;
+        $medicine['status'] = 3;
         $medicine['verification'] = $verification;
 
 
