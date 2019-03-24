@@ -23,7 +23,7 @@ Route::get('/take', 'admin/VerificationController/getMedicine');
 
 Route::get('/deliver', 'admin/StatusUpdaterController/deliver');
 Route::get('/update', 'admin/StatusUpdaterController/update');
-Route::get('/deleteMedicine', 'admin/StatusUpdaterController/delete');
+Route::get('/delete', 'admin/StatusUpdaterController/deleteMedicine');
 
 
 Route::get('/test', 'index/TestController/sendVerification');
