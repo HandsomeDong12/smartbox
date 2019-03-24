@@ -246,5 +246,13 @@ class Database
         return $phoneNumber;
     }
 
+    public function setBox($boxId, $status)
+    {
+        $box = Box::get($boxId);
+        $box['status'] = $status;
+        $result = $box->save();
+        return $result;
+    }
+
 
 }

@@ -37,6 +37,9 @@ class StatusUpdaterController
         $boxId = $params['boxId'];
 
         $result = $this->database->deliverMedicine($id, $boxId);
+        if ($result == 1){
+            $this->database->setBox($boxId, 1);
+        }
 
         return ['result' => $result];
     }
@@ -72,6 +75,12 @@ class StatusUpdaterController
         $phoneNumber = $this->database->getPhoneNumber($id);
         $boxId = $this->database->getBoxId($id);
         $this->smsSender->sendTakeMedicineSms($phoneNumber, $verification, $boxId);
+    }
+
+    public function deleteMedicine(Request $request)
+    {
+
+
     }
 
 }
