@@ -246,11 +246,25 @@ class Database
         return $phoneNumber;
     }
 
+    /**
+     * @param $boxId
+     * @param $status
+     * @return false|int
+     * @throws \think\exception\DbException
+     */
     public function setBox($boxId, $status)
     {
         $box = Box::get($boxId);
         $box['status'] = $status;
         $result = $box->save();
+        return $result;
+    }
+
+    public function deleteMedicine($id)
+    {
+        $medicine = Medicine::get($id);
+        $result = $medicine->delete();
+
         return $result;
     }
 

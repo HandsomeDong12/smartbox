@@ -77,10 +77,21 @@ class StatusUpdaterController
         $this->smsSender->sendTakeMedicineSms($phoneNumber, $verification, $boxId);
     }
 
+    /**
+     * @param Request $request
+     * @return array
+     * @throws \think\exception\DbException
+     */
     public function deleteMedicine(Request $request)
     {
+        $params = $request->param();
+        $id = $params['id'];
+        $boxId = $this->database->getBoxId($id);
 
+        $result = $this->database->deleteMedicine($id);
+        $this->database->setBox($boxId, 0);
 
+        return ['result' => $result];
     }
 
 }
