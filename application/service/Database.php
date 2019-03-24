@@ -228,6 +228,17 @@ class Database
      * @return mixed
      * @throws \think\exception\DbException
      */
+    public function getBoxId($id)
+    {
+        $medicine = Medicine::get($id);
+        return $medicine['boxId'];
+    }
+
+    /**
+     * @param $id
+     * @return mixed
+     * @throws \think\exception\DbException
+     */
     public function getPhoneNumber($id)
     {
         $medicine = Medicine::get($id);

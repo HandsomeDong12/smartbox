@@ -70,7 +70,8 @@ class StatusUpdaterController
     private function sendVerification($id, $verification)
     {
         $phoneNumber = $this->database->getPhoneNumber($id);
-        $this->smsSender->sendTakeMedicineSms($phoneNumber, $verification);
+        $boxId = $this->database->getBoxId($id);
+        $this->smsSender->sendTakeMedicineSms($phoneNumber, $verification, $boxId);
     }
 
 }

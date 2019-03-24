@@ -23,7 +23,7 @@ class SmsSender
         $appId = 1400125607;
         $appKey = "576634af0af8af302af510047fded680";;
         $this->registerId = 276013;
-        $this->takeMedicineId = 276016;
+        $this->takeMedicineId = 300805;
 
         try{
             $sender = new SmsSingleSender($appId, $appKey);
@@ -43,9 +43,10 @@ class SmsSender
         return $result;
     }
 
-    public function sendTakeMedicineSms($phoneNumber, $verification)
+    public function sendTakeMedicineSms($phoneNumber, $verification, $boxId)
     {
         $phoneNumbers[] = $phoneNumber;
+        $params[] = $boxId;
         $params[] = $verification;
         $result = $this->sender->sendWithParam("86", $phoneNumbers[0], $this->takeMedicineId,
             $params, "", "", "");
