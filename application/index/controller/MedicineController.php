@@ -23,7 +23,7 @@ class MedicineController extends Controller
 
     /**
      * @param Request $request
-     * @return array
+     * @return false|string|\think\Collection|array
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
      * @throws \think\exception\DbException
