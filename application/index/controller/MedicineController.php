@@ -38,7 +38,7 @@ class MedicineController extends Controller
 
         $medicine = $this->database->getMedicine($userId);
 
-        if (count($medicine) === 0) {
+        if (count($medicine) == 0) {
             return ['error' => 'You has no medicine'];
         }
 
