@@ -65,8 +65,7 @@ class Database
     {
         $medicine = new Medicine();
 
-
-        $medicineData = $medicine->where('phoneNumber', $userId)->find();
+        $medicineData = $medicine->where('phoneNumber', $userId)->select();
 
         return $medicineData;
     }
