@@ -73,7 +73,11 @@ class TestController extends Controller
     public function test(Request $request)
     {
         $test = $this->database->getMedicine('111');
-        return ['data' => $test];
+        if (is_null($test)){
+            return ['data' => 'null'];
+        }else{
+            return ['data' => $test];
+        }
     }
 
 
