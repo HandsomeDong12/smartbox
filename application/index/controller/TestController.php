@@ -76,7 +76,7 @@ class TestController extends Controller
         if (is_null($test)){
             return ['data' => 'null'];
         }else{
-            return ['data' => $test];
+            return ['data' => 'null'];
         }
     }
 
