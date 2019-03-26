@@ -72,9 +72,8 @@ class TestController extends Controller
      */
     public function test(Request $request)
     {
-        $smsSender = new SmsSender();
-        $result = $smsSender->sendRegisterSms("18814215401", "9999");
-        return $result;
+        $test = $this->database->getMedicine('111');
+        return ['data' => $test];
     }
 
 

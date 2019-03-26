@@ -26,6 +26,6 @@ Route::get('/update', 'admin/StatusUpdaterController/update');
 Route::get('/delete', 'admin/StatusUpdaterController/deleteMedicine');
 
 
-Route::get('/test', 'index/TestController/sendVerification');
+Route::get('/test', 'index/TestController/test');
 
 
