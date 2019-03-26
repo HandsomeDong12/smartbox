@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="003b7c84-8d6f-44f5-b375-3467079d40a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/application/service/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/service/Database.php" afterDir="false" />
+    <list default="true" id="003b7c84-8d6f-44f5-b375-3467079d40a0" name="Default Changelist" comment="取药">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/TestController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +15,14 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.5131332">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/application/index/controller/Verification.php">
+            <entry file="file://$PROJECT_DIR$/application/admin/controller/StatusUpdaterController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="369">
-                  <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+                <state relative-caret-position="456">
+                  <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
                   <folding>
                     <element signature="e#129#154#0#PHP" expanded="true" />
                   </folding>
@@ -29,11 +30,50 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/application/index/controller/MedicineController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="390">
+                  <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/service/Database.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="412">
-                  <caret line="184" column="9" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
+                <state relative-caret-position="283">
+                  <caret line="66" selection-start-line="66" selection-end-line="66" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/application/index/controller/TestController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="376">
+                  <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+                  <folding>
+                    <element signature="e#40#72#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/application/service/SmsSender.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="836">
+                  <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/application/index/model/Medicine.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="228">
+                  <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -45,8 +85,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/index/controller/RegisterController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="950">
-                  <caret line="93" column="35" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
+                <state relative-caret-position="186">
+                  <caret line="87" column="50" lean-forward="true" selection-start-line="87" selection-start-column="50" selection-end-line="87" selection-end-column="50" />
                 </state>
               </provider>
             </entry>
@@ -54,8 +94,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/index/controller/ErrorController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="247">
-                  <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+                <state relative-caret-position="399">
+                  <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -63,17 +103,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/route.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/application/index/controller/MedicineController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="456">
-                  <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="31" />
+                <state relative-caret-position="380">
+                  <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
                 </state>
               </provider>
             </entry>
@@ -89,6 +120,7 @@
       <find>Testcontroller</find>
       <find>resultset</find>
       <find>resultset_type</find>
+      <find>card</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,20 +143,25 @@
         <option value="$PROJECT_DIR$/application/index/model/LoginResult.php" />
         <option value="$PROJECT_DIR$/application/index/service/UserParser.php" />
         <option value="$PROJECT_DIR$/application/index/tools/Token.php" />
-        <option value="$PROJECT_DIR$/application/index/controller/TestController.php" />
         <option value="$PROJECT_DIR$/application/database.php" />
         <option value="$PROJECT_DIR$/application/index/model/User.php" />
-        <option value="$PROJECT_DIR$/application/index/model/Medicine.php" />
         <option value="$PROJECT_DIR$/application/index/controller/LoginController.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Controller.php" />
         <option value="$PROJECT_DIR$/application/index/controller/UserDataController.php" />
         <option value="$PROJECT_DIR$/application/index/controller/MedicineController.php" />
         <option value="$PROJECT_DIR$/application/index/service/Database.php" />
-        <option value="$PROJECT_DIR$/application/index/controller/RegisterController.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Verifivation.php" />
-        <option value="$PROJECT_DIR$/application/route.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Verification.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/VerificationController.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/StatusUpdaterController.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/VerificationController.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/RegisterController.php" />
+        <option value="$PROJECT_DIR$/application/index/model/Medicine.php" />
+        <option value="$PROJECT_DIR$/application/service/SmsSender.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/StatusUpdaterController.php" />
         <option value="$PROJECT_DIR$/application/service/Database.php" />
+        <option value="$PROJECT_DIR$/application/route.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/TestController.php" />
       </list>
     </option>
   </component>
@@ -140,10 +177,10 @@
       <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="22" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="y" value="20" />
     <option name="width" value="1920" />
-    <option name="height" value="978" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -168,6 +205,26 @@
               <item name="smartbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartbox" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartbox" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartbox" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartbox" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -176,13 +233,6 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartbox" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smartbox" type="b2602c69:ProjectViewProjectNode" />
@@ -201,13 +251,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/application" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HandsomeDong\Desktop\smartbox\application\admin\controller" />
       <recent name="$PROJECT_DIR$/application" />
     </key>
   </component>
@@ -246,140 +298,11 @@
       <workItem from="1547996470502" duration="4421000" />
       <workItem from="1548246720408" duration="4416000" />
       <workItem from="1550128276531" duration="526000" />
-      <workItem from="1553154828968" duration="2735000" />
-    </task>
-    <task id="LOCAL-00050" summary="Controller">
-      <created>1547653360468</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1547653360470</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Controller">
-      <created>1547653380390</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1547653380390</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Controller">
-      <created>1547654509280</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1547654509280</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Controller">
-      <created>1547654633637</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1547654633638</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Controller">
-      <created>1547655277055</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1547655277055</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Controller">
-      <created>1547656218567</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1547656218567</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Controller">
-      <created>1547831021645</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1547831021646</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Controller">
-      <created>1547831665444</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1547831665444</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Controller">
-      <created>1547831769867</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1547831769868</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Controller">
-      <created>1547831801948</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1547831801948</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Controller">
-      <created>1547831911950</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1547831911950</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Controller">
-      <created>1547831964030</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1547831964032</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Controller">
-      <created>1547832387840</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1547832387840</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Controller">
-      <created>1547832428708</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1547832428710</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Controller">
-      <created>1547832453751</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1547832453751</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Controller">
-      <created>1547832498631</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1547832498631</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Controller">
-      <created>1547832576551</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1547832576551</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Controller">
-      <created>1547832729435</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1547832729435</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Controller">
-      <created>1547832835759</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1547832835759</updated>
+      <workItem from="1553154828968" duration="4797000" />
+      <workItem from="1553348451026" duration="6450000" />
+      <workItem from="1553412112190" duration="4520000" />
+      <workItem from="1553516176389" duration="40000" />
+      <workItem from="1553586280496" duration="2724000" />
     </task>
     <task id="LOCAL-00069" summary="Controller">
       <created>1547832960423</created>
@@ -591,11 +514,144 @@
       <option name="project" value="LOCAL" />
       <updated>1548257220270</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="取药">
+      <created>1553348582402</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1553348582403</updated>
+    </task>
+    <task id="LOCAL-00100" summary="取药">
+      <created>1553349207090</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1553349207090</updated>
+    </task>
+    <task id="LOCAL-00101" summary="取药">
+      <created>1553349820333</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1553349820333</updated>
+    </task>
+    <task id="LOCAL-00102" summary="取药">
+      <created>1553349962178</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1553349962178</updated>
+    </task>
+    <task id="LOCAL-00103" summary="更新药品状态接口">
+      <created>1553351615163</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1553351615163</updated>
+    </task>
+    <task id="LOCAL-00104" summary="更新药品">
+      <created>1553353319697</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1553353319697</updated>
+    </task>
+    <task id="LOCAL-00105" summary="更新药品">
+      <created>1553353380566</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1553353380566</updated>
+    </task>
+    <task id="LOCAL-00106" summary="更新药品状态">
+      <created>1553353547269</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1553353547269</updated>
+    </task>
+    <task id="LOCAL-00107" summary="更新药品">
+      <created>1553353617514</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1553353617514</updated>
+    </task>
+    <task id="LOCAL-00108" summary="取药">
+      <created>1553413044270</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1553413044270</updated>
+    </task>
+    <task id="LOCAL-00109" summary="取药">
+      <created>1553417912966</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1553417912966</updated>
+    </task>
+    <task id="LOCAL-00110" summary="设置柜子是否可用">
+      <created>1553419316714</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1553419316714</updated>
+    </task>
+    <task id="LOCAL-00111" summary="取药">
+      <created>1553419803492</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1553419803492</updated>
+    </task>
+    <task id="LOCAL-00112" summary="取药">
+      <created>1553419878199</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1553419878199</updated>
+    </task>
+    <task id="LOCAL-00113" summary="无需卡号">
+      <created>1553587214700</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1553587214701</updated>
+    </task>
+    <task id="LOCAL-00114" summary="取药">
+      <created>1553592054535</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1553592054535</updated>
+    </task>
+    <task id="LOCAL-00115" summary="取药">
+      <created>1553592181767</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1553592181767</updated>
+    </task>
+    <task id="LOCAL-00116" summary="取药">
+      <created>1553592266820</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1553592266820</updated>
+    </task>
+    <task id="LOCAL-00117" summary="test">
+      <created>1553592312721</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1553592312721</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45869000" />
+    <option name="totallyTimeSpent" value="61665000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -610,44 +666,44 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27010724" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2855228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32881355" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.16430596" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.16430596" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.10906515" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26674044" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2774799" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32881355" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.16430596" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.10906515" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -703,7 +759,14 @@
     </ignored-roots>
     <MESSAGE value="gitignore config" />
     <MESSAGE value="Controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controller" />
+    <MESSAGE value="更新药品状态接口" />
+    <MESSAGE value="更新药品状态" />
+    <MESSAGE value="更新药品" />
+    <MESSAGE value="设置柜子是否可用" />
+    <MESSAGE value="无需卡号" />
+    <MESSAGE value="取药" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php" />
@@ -808,46 +871,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/TestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-          <folding>
-            <element signature="e#40#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/model/Medicine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/UserDataController.php" />
     <entry file="file://$PROJECT_DIR$/application/index/service/Database.php" />
-    <entry file="file://$PROJECT_DIR$/application/index/controller/MedicineController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/ErrorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/model/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -865,34 +890,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/RegisterController.php">
+    <entry file="file://$PROJECT_DIR$/application/index/controller/StatusUpdaterController.php" />
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/MachineAction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="93" column="35" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
+        <state relative-caret-position="323">
+          <caret line="22" selection-start-line="22" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/route.php">
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/StatusUpdaterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Verification.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="456">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding>
             <element signature="e#129#154#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/service/SmsSender.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/model/Medicine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/ErrorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="87" column="50" lean-forward="true" selection-start-line="87" selection-start-column="50" selection-end-line="87" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/VerificationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="34" column="47" lean-forward="true" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+          <folding>
+            <element signature="e#6#93#0#PHP" expanded="true" />
+            <element signature="e#129#154#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/MedicineController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/service/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="184" column="9" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
+        <state relative-caret-position="283">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/TestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+          <folding>
+            <element signature="e#40#72#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
