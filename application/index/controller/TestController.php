@@ -78,7 +78,7 @@ class TestController extends Controller
 
         $test = $this->database->getMedicine($id);
         if (count($test) != 0){
-            return ['data' => $test, 'good' => $id];
+            return ['data' => $test[0]->id, 'good' => $id];
 
         }else{
             return ['data' => 'null', 'null' => $id];
