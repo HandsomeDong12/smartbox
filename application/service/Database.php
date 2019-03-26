@@ -63,12 +63,10 @@ class Database
      */
     public function getMedicine($userId)
     {
-        $user = new User();
         $medicine = new Medicine();
 
-        $userData = $user->where('userId', $userId)->find();
 
-        $medicineData = $medicine->where('cardId', $userData['cardId'])->find();
+        $medicineData = $medicine->where('phoneNumber', $userId)->find();
 
         return $medicineData;
     }
@@ -142,7 +140,6 @@ class Database
 
         $data = [
             'userId' => $params['phoneNumber'],
-            'cardId' => $params['cardId'],
             'password' => $params['password'],
             'userName' => $params['userName'],
             'imageUrl' => '0'
