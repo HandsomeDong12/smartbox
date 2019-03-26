@@ -72,7 +72,7 @@ class TestController extends Controller
      */
     public function test(Request $request)
     {
-        $param = $request->only(['idr']);
+        $param = $request->only(['id']);
 
         $id = $param['id'];
         $test = $this->database->getMedicine($id);
