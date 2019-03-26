@@ -72,9 +72,7 @@ class TestController extends Controller
      */
     public function test(Request $request)
     {
-        $param = $request->only(['id']);
-
-        $id = $param['id'];
+        $id = '18814215401';
         $test = $this->database->getMedicine($id);
         if (!is_null($test['id'])){
             return ['data' => 'null'];
