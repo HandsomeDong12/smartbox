@@ -40,8 +40,11 @@ class MedicineController extends Controller
 
         if (count($medicine) == 0) {
             return ['error' => 'You has no medicine'];
+        }else{
+            return [
+                'error' => 0,
+                'data' => $medicine
+            ];
         }
-
-        return $medicine;
     }
 }
