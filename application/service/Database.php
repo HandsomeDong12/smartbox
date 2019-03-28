@@ -9,6 +9,7 @@
 namespace app\service;
 
 use app\admin\model\Box;
+use app\index\model\History;
 use app\index\model\Medicine;
 use app\index\model\Register;
 use app\index\model\User;
@@ -256,11 +257,33 @@ class Database
         return $result;
     }
 
+    /**
+     * @param $id
+     * @return int
+     * @throws \think\exception\DbException
+     */
     public function deleteMedicine($id)
     {
         $medicine = Medicine::get($id);
         $result = $medicine->delete();
 
+        return $result;
+    }
+
+    /**
+     * @param $id
+     * @return false|int
+     * @throws \think\exception\DbException
+     */
+    public function setHistory($id)
+    {
+        $medicine = Medicine::get($id);
+        $history = new History();
+        $history['id'] = $medicine['id'];
+        $history['updateTime'] = time();
+        $history['medicine'] = $medicine['medicine'];
+        $history['phoneNumber'] = $medicine['phoneNumber'];
+        $result = $history->save();
         return $result;
     }
 

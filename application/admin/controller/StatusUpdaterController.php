@@ -37,7 +37,7 @@ class StatusUpdaterController
         $boxId = $params['boxId'];
 
         $result = $this->database->deliverMedicine($id, $boxId);
-        if ($result == 1){
+        if ($result == 1) {
             $this->database->setBox($boxId, 1);
         }
 
@@ -57,7 +57,7 @@ class StatusUpdaterController
 
         $verification = rand(1000, 9999);
 
-        $result  = $this->database->updateMedicine($id, $verification);
+        $result = $this->database->updateMedicine($id, $verification);
 
         $this->sendVerification($id, $verification);
 
@@ -88,10 +88,14 @@ class StatusUpdaterController
         $id = $params['id'];
         $boxId = $this->database->getBoxId($id);
 
-        $result = $this->database->deleteMedicine($id);
-        $this->database->setBox($boxId, 0);
+        $historyResult = $this->database->setHistory($id);
+        if ($historyResult == 1) {
+            $result = $this->database->deleteMedicine($id);
+        } else {
+            $result = 0;
+        }
 
+        $this->database->setBox($boxId, 0);
         return ['result' => $result];
     }
-
 }
