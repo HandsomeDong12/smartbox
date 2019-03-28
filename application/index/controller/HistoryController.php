@@ -1,9 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: fitz
- * Date: 1/16/19
- * Time: 7:47 AM
+ * User: HandsomeDong
+ * Date: 2019/3/28
+ * Time: 16:49
  */
 
 namespace app\index\controller;
@@ -12,7 +12,7 @@ namespace app\index\controller;
 use app\service\Database;
 use think\Request;
 
-class MedicineController extends Controller
+class HistoryController extends Controller
 {
     private $database;
 
@@ -23,12 +23,12 @@ class MedicineController extends Controller
 
     /**
      * @param Request $request
-     * @return false|string|\think\Collection|array
+     * @return array
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
      * @throws \think\exception\DbException
      */
-    public function getMedicine(Request $request)
+    public function history(Request $request)
     {
         $userId = $this->getUser($request);
 
@@ -36,12 +36,12 @@ class MedicineController extends Controller
             return $this->failedVerify();
         }
 
-        $medicine = $this->database->getMedicine($userId);
+        $history = $this->database->getHistory($userId);
 
-        if (count($medicine) != 0) {
+        if (count($history) != 0) {
             return [
                 'error' => 0,
-                'data' => $medicine
+                'data' => $history
             ];
 
         } else {
