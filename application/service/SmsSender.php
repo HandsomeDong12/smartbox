@@ -45,6 +45,17 @@ class SmsSender
         return $result;
     }
 
+    public function sendTakeMedicineSms($phoneNumber, $verification, $boxId)
+    {
+        $phoneNumbers[] = $phoneNumber;
+        $params[] = $boxId;
+        $params[] = $verification;
+        $result = $this->sender->sendWithParam("86", $phoneNumbers[0], $this->takeMedicineId,
+            $params, "", "", "");
+
+        return $result;
+    }
+
     public function sendFinishSms($phoneNumber, $id)
     {
         $phoneNumbers[] = $phoneNumber;
@@ -54,5 +65,7 @@ class SmsSender
 
         return $result;
     }
+
+
 
 }
