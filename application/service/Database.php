@@ -104,6 +104,18 @@ class Database
         $register->insert($data);
     }
 
+    public function test($phoneNumber, $verification)
+    {
+        $register = new Register();
+
+        if ($result = $register->where('phoneNumber', $phoneNumber)) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
     public function deleteVerification($phoneNumber)
     {
         $register = new Register();
@@ -300,7 +312,7 @@ class Database
 
         $historyData = $history->where('phoneNumber', $phoneNumber)->select();
 
-        return$historyData;
+        return $historyData;
 
     }
 

@@ -72,20 +72,11 @@ class TestController extends Controller
      */
     public function test(Request $request)
     {
-        $param = $request->only(['id']);
+        $param = $request->only(['phoneNumber']);
 
-        $id = $param['id'];
-
-        $test = $this->database->getMedicine($id);
-        if (count($test) != 0){
-            return ['data' => $test, 'good' => $id];
-
-        }else{
-            return ['data' => 'null', 'null' => $id];
-        }
+        $phoneNumber = $param['phoneNumber'];
+        $verification = rand(1000, 9999);
+        $result = $this->database->test($phoneNumber, $verification);
+        return ['result' => $result];
     }
-
-
-
-
 }
