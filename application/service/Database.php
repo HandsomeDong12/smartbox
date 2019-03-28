@@ -116,7 +116,7 @@ class Database
     {
         $register = new Register();
 
-        if ($result = $register->where('phoneNumber', $phoneNumber)->select()) {
+        if ($register->where('phoneNumber', $phoneNumber)->find()) {
             return true;
         } else {
             return false;
