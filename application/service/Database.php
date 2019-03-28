@@ -104,11 +104,19 @@ class Database
         $register->insert($data);
     }
 
+    /**
+     * @param $phoneNumber
+     * @param $verification
+     * @return bool
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
     public function test($phoneNumber, $verification)
     {
         $register = new Register();
 
-        if ($result = $register->where('phoneNumber', $phoneNumber)) {
+        if ($result = $register->where('phoneNumber', $phoneNumber)->select()) {
             return true;
         } else {
             return false;
