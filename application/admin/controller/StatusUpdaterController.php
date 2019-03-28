@@ -87,6 +87,7 @@ class StatusUpdaterController
         $params = $request->param();
         $id = $params['id'];
         $boxId = $this->database->getBoxId($id);
+        $phoneNumber = $this->database->getPhoneNumber($id);
 
         $historyResult = $this->database->setHistory($id);
         if ($historyResult == 1) {
@@ -94,6 +95,7 @@ class StatusUpdaterController
         } else {
             $result = 0;
         }
+        $this->smsSender->sendFinishSms($phoneNumber, $id);
 
         $this->database->setBox($boxId, 0);
         return ['result' => $result];
