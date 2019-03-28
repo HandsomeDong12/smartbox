@@ -13,6 +13,7 @@ use app\index\model\History;
 use app\index\model\Medicine;
 use app\index\model\Register;
 use app\index\model\User;
+use think\Request;
 
 class Database
 {
@@ -92,36 +93,29 @@ class Database
 
     }
 
-    public function setVerification($phoneNumber, $verification)
-    {
-        $register = new Register();
-
-        $data = [
-            'phoneNumber' => $phoneNumber,
-            'verification' => $verification
-        ];
-
-        $register->insert($data);
-    }
-
     /**
      * @param $phoneNumber
      * @param $verification
-     * @return bool
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
      * @throws \think\exception\DbException
      */
-    public function test($phoneNumber, $verification)
+    public function setVerification($phoneNumber, $verification)
     {
         $register = new Register();
 
         if ($register->where('phoneNumber', $phoneNumber)->find()) {
-            return true;
+            $data = Register::get($phoneNumber);
+            $data['verification'] = $verification;
+            $data->save();
         } else {
-            return false;
-        }
+            $data = [
+                'phoneNumber' => $phoneNumber,
+                'verification' => $verification
+            ];
 
+            $register->insert($data);
+        }
     }
 
     public function deleteVerification($phoneNumber)
