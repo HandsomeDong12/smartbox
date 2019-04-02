@@ -40,6 +40,7 @@ class VerificationController
         } else {
             return[
                 'status' => 1,
+                'id' => $medicineData['id'],
                 'boxId' => $medicineData['boxId'],
                 'medicine' => $medicineData['medicine']
             ];
